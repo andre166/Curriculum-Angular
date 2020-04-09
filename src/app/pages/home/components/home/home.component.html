@@ -1,9 +1,16 @@
 
-<div class="bg">
-    <div  id="imagem" >
+<div class="bg" fxLayout="row">
+    <div  id="imagem"  fxFlexFill 
+        [ngStyle.xs]="{'background-position.px': -350}"
+        [ngStyle.sm]="{'background-position.px': -180}"
+        
+        >
+
+
+
         <div id="txt-intro"
             style="font-style: italic"
-            [ngStyle.xs]="{'font-size.px': 15,'margin-top.rem': 18}"
+            [ngStyle.xs]="{'font-size.px': 15,'margin-top.rem': 17}"
             [ngStyle.sm]="{'font-size.px': 20}"
             [ngStyle.md]="{'font-size.px': 30}"
         >
@@ -18,16 +25,21 @@
             [ngStyle.md]="{'font-size.px': 18}"
             >
         <p id="subtitulo">Desenvolvedor Full Stack</p>
+
     </div>
 
         
      
     </div>
 
-    <div class="bgt">
+    
+</div>
 
-    </div>
+<div class="bgt">
 
+</div>
+<div fxLayout="row">
+    
 </div>
 
 <!-- <div class="carta">
