@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent, WrapperhomeComponent } from './components';
+import { CertificadosComponent, WrapperCertificadosComponents } from './components';
 
 import { RouterModule } from '@angular/router';
 
@@ -13,11 +13,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-//
+
 @NgModule({
   declarations: [
-    HomeComponent,
-    WrapperhomeComponent
+    CertificadosComponent,
+    WrapperCertificadosComponents
   ],
   imports: [
     CommonModule,
@@ -32,4 +32,4 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule
   ]
 })
-export class HomeModule { }
+export class CertificadosModule { }
