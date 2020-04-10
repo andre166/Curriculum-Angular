@@ -20,6 +20,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
 
 @NgModule({
   declarations: [
@@ -42,11 +45,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CertificadosRoutingModule,
     ProjetosModule,
     ProjetosRoutingModule,
+    FontAwesomeModule,
+
 
 
     AppRoutingModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
