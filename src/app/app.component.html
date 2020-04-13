@@ -1,36 +1,34 @@
 
     <mat-toolbar>
-      <button mat-button  routerLink="/home" (click)="sidenav.close()"> <span class="material-icons"> home</span>  </button>
+      
+      <a class="logo"  routerLink="/home" (click)="sidenav.close()"> 
+        Home 
+    </a>
       
       <span class="example-spacer"></span>
 
-      <div fxShow="true" fxHide.lt-md="true">
+      <div class="navbar" fxShow="true" fxHide.lt-md="true">
         <div class="example-button-row">
 
-          <button mat-button (click)="CurriculumAlert()">
-            <span class="material-icons"> get_app</span> 
-            Curriculum 
-          </button>
+          <a class="morph-menu-btn" (click)="CurriculumAlert()">
+            <i class="fas fa-file-download"></i> CV
+           
+          </a>
 
-          <button mat-button  routerLink="/certificados">
-            <span class="material-icons"> class</span> 
+          <a class="morph-menu-btn"  routerLink="/certificados">
+           
             Certificados 
-          </button>
+          </a>
 
-            <button mat-button   routerLink="/contato">
-                <span class="material-icons"> contact_mail</span> 
+            <a class="morph-menu-btn"   routerLink="/contato">
+               
                 Contato 
-            </button>
+            </a>
 
-            <button mat-button  routerLink="/projetos">
-              <span class="material-icons"> folder_open</span> 
+            <a class="morph-menu-btn"  routerLink="/projetos">
+             
               Projetos 
-            </button>
-
-            <button mat-button  routerLink="/home">
-                <span class="material-icons"> home</span> 
-                Home 
-            </button>
+            </a>
 
         </div>
       </div>
@@ -67,13 +65,12 @@
           <div class="left-col">
             <div class="img-faces">
 
-              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a> 
-              <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a> 
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> 
-              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a> 
-              <a href="#" class="social-icon"><i class="fab fa-github"></i></a> 
+              <a href="#" class="morph-footer-btn"><i class="fab fa-facebook-f"></i></a> 
+              <a href="#" class="morph-footer-btn"><i class="fab fa-whatsapp"></i></a> 
+              <a href="#" class="morph-footer-btn"><i class="fab fa-instagram"></i></a> 
+              <a href="#" class="morph-footer-btn"><i class="fab fa-linkedin-in"></i></a> 
+              <a href="#" class="morph-footer-btn"><i class="fab fa-github"></i></a> 
              
-  
             </div>
 
             
