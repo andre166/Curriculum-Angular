@@ -23,6 +23,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './header';
 import { FooterComponent } from './footer';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 
@@ -34,6 +37,7 @@ import { FooterComponent } from './footer';
     FooterComponent,
   ],
   imports: [
+    MatCardModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
@@ -51,6 +55,8 @@ import { FooterComponent } from './footer';
     ProjetosModule,
     ProjetosRoutingModule,
     FontAwesomeModule,
+    MatGridListModule,
+
 
 
 

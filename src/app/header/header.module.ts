@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -22,6 +23,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatMenuModule,
     FlexLayoutModule,
     FontAwesomeModule,
+    MatGridListModule,
     
   ]
 })

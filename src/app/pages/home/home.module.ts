@@ -13,6 +13,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { Section1Component } from './components/section1';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 //
 @NgModule({
@@ -31,7 +33,9 @@ import { Section1Component } from './components/section1';
     MatIconModule,
     MatSnackBarModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatGridListModule,
+    MatCardModule
   ],
   exports: [
     Section1Component
