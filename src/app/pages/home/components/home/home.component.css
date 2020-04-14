@@ -38,6 +38,7 @@
 }
 
 #txt-subtitulo{
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +48,9 @@
 }
 
 #imagem{
+
     background: url('../../../../../assets/imagens/coffee.jpg');
+    filter: grayscale(80%);
     overflow: hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
