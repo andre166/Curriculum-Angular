@@ -1,0 +1,135 @@
+
+.right-col{
+    text-align: center;
+    color: #5e6879f1;
+  }
+  .right-col h4{
+    color: #c9cccf;
+  }
+  
+  
+  footer{
+    background: #f1f1f1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  footer a{
+  
+    color: #a58c5e;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px 30px;
+    background: #f1f1f1;
+    box-shadow:  2px 2px 2px #bdbdbd, 
+               1px -2px 2px #ffffff;
+    text-align: center;
+    display: inline-block;
+    font-size: 24pt;
+    font-weight: 600;
+  
+  }
+  
+  footer a:first-child{
+    box-shadow:  2px 2px 2px #bdbdbd, 
+                -2px -2px 2px #ffffff;
+  }
+  
+  footer a:hover{
+    /* border-radius: 10px; */
+    background: #f1f1f1;
+    box-shadow: inset 4px 4px 4px #bdbdbd, 
+                inset -3px 0px 4px #bdbdbd, 
+                inset -3px -3px 3px #ffffff;
+  
+  }
+  
+  .footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .right-col h1{
+    font-size: 26px;
+  }
+  
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+    mat-toolbar{
+      height: 60px;
+     
+    }
+    .btn-hamburguer-morph{
+      color: #a58c5e;
+      border-radius: 20px;
+      background: #f1f1f1;
+      box-shadow:  2px 2px 1.5px #bdbdbd, 
+      -2px -2px 1.5px #ffffff;
+    }
+  
+    .logo{
+      padding: 3px 15px;
+      border-radius: 5px;
+      box-shadow:  2px 2px 1.5px #bdbdbd, 
+      -2px -2px 1.5px #ffffff;
+      font-size: 11pt;
+      font-weight: 600;
+    }
+  
+    footer a{
+  
+      padding: 12px 20px;
+      background: #f1f1f1;
+      font-size: 18pt;
+      font-weight: 600;
+      margin-bottom: 30px;
+    
+    }
+    footer{
+      padding-top: 5px;
+      padding-bottom: 40px;
+    }
+  
+  
+    .footer-container{
+      max-width: 600px;
+    }
+    .right-col{
+      width: 100%;
+      
+    }
+  
+    .left-col{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  @media screen and (max-width:700px){
+    .btn{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+      }
+  }

@@ -27,7 +27,7 @@
 
 #btn-descer:hover{
     color: #9c814e;
-    background-color: #ebebebef;
+    background-color: #f1f1f1;
     border: 2px solid #9c814e;
 
 }
@@ -77,5 +77,13 @@
     justify-content: center;
   }
 
+  @media screen and (max-width:960px) {
+    #btn-descer{
+        margin-top: 16rem;
+        font-size: 20pt;
+        border-radius: 100%;
+        padding: 3px 8px;
+      
+    }
 
-
+  }

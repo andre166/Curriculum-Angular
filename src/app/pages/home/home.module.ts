@@ -12,12 +12,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { Section1Component } from './components/section1';
 
 //
 @NgModule({
   declarations: [
     HomeComponent,
-    WrapperhomeComponent
+    WrapperhomeComponent,
+    Section1Component
   ],
   imports: [
     CommonModule,
@@ -30,6 +32,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSnackBarModule,
     ReactiveFormsModule,
     FlexLayoutModule
+  ],
+  exports: [
+    Section1Component
   ]
 })
 export class HomeModule { }
