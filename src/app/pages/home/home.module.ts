@@ -15,13 +15,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { Section1Component } from './components/section1';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { Section2Component } from './components/section2';
 
 //
 @NgModule({
   declarations: [
     HomeComponent,
     WrapperhomeComponent,
-    Section1Component
+    Section1Component,
+    Section2Component
   ],
   imports: [
     CommonModule,
@@ -38,7 +40,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatCardModule
   ],
   exports: [
-    Section1Component
+    Section1Component,
+    Section2Component
   ]
 })
 export class HomeModule { }
