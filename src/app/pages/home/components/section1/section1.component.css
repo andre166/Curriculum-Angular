@@ -246,8 +246,8 @@
     padding: 20px 25px 20px 25px;
     border-radius: 30px;
     background: #a58c5e;
-    /* box-shadow:  8px 8px 12px #bdbdbd, 
-     -8px -8px 12px #fff; */
+    box-shadow:  8px 8px 12px #bdbdbd, 
+     -8px -8px 12px #fbfbfb;
     text-align: center;
     display: inline-block;
     font-size: 16pt;
@@ -256,11 +256,11 @@
 
   .btn-morph:hover{
       
-    color: #a58c5e;
+    color: #fff;
     /* border-radius: 50px; */
-    background: #f1f1f1;
-    box-shadow: inset 8px 8px 15px #bdbdbd, 
-    inset -8px -8px 15px #ffffff;
+    background: #a58c5e;
+    box-shadow: inset 8px 8px 15px #7271717a, 
+    inset -6px -6px 15px #cecdcdc2;
   
   }
 

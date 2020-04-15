@@ -9,6 +9,8 @@
   
   
   footer{
+    border-top: 1px solid #a58c5e;
+    /* margin-top: 50px; */
     background: #f1f1f1;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -22,7 +24,7 @@
     padding: 20px 30px;
     background: #f1f1f1;
     box-shadow:  2px 2px 2px #bdbdbd, 
-               1px -2px 2px #ffffff;
+               3px -2px 2px #ffffff;
     text-align: center;
     display: inline-block;
     font-size: 24pt;
@@ -32,15 +34,35 @@
   
   footer a:first-child{
     box-shadow:  2px 2px 2px #bdbdbd, 
-                -2px -2px 2px #ffffff;
+                  -3px -2px 2px #ffffff;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
   }
+
+  footer a:first-child:hover{
+    box-shadow:  inset 3px 3px 3px #bdbdbd, 
+                inset -3px -2px 2px #ffffff;
+               
+  }
+
+  footer a:last-child{
+    
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+  }
+
+  footer a:last-child:hover{
+    
+    box-shadow:  inset 4px 4px 4px #bdbdbd, 
+                inset -3px -3px 5px #ffffff;
+}
   
   footer a:hover{
     /* border-radius: 10px; */
     background: #f1f1f1;
-    box-shadow: inset 4px 4px 4px #bdbdbd, 
-                inset -3px 0px 4px #bdbdbd, 
-                inset -3px -3px 3px #ffffff;
+    box-shadow: inset 3px 3px 3px #bdbdbd, 
+    inset 0px -2px 2px #ffffff,
+    inset -4px 0px 4px #bdbdbd; 
   
   }
   
