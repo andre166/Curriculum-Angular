@@ -1,13 +1,13 @@
-<div class="section2" fxLayoutAlign="center center"
+<div class="section2" fxLayoutAlign="center center" [ngStyle.gt-sm]="{'height.vh': 100} "
 
 >
 
 <div fxLayout="row" 
    class="sec2-container"
-  fxLayout.sm="column" 
-  fxLayout.xs="column" 
- >
-
+   fxLayout.sm="column" 
+   fxLayout.xs="column" 
+   >
+   
    <!-- <div  fxLayout="row" fxLayoutAlign="center center">
        <h1>Cursos</h1>
    </div> -->
@@ -94,17 +94,17 @@
  </div>
           <mat-tab-group>
 
-            <mat-tab label="Angular">
+            <mat-tab label="React Cad">
 
               <mat-card class="example-card">
                 <mat-card-header>
                   <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title><i class="fab fa-angular"></i> Udemy</mat-card-title>
+                  <mat-card-title>ReactJS</mat-card-title>
                 </mat-card-header>
-                <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
+                <img mat-card-image src="../../../../../assets/imagens/projetos/reaCad.PNG" >
                 <mat-card-content>
                   <p>
-                    Angular 9, Flexbox, Angular Material, hammerJS...
+                    Crud simples com filtros e persintências no local Storage, Requisição http com axios.
                   </p>
                 </mat-card-content>
                 <mat-card-actions>

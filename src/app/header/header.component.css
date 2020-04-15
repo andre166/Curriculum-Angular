@@ -1,11 +1,13 @@
 
 mat-toolbar{
-    background-color: #f1f1f1;
-    /* position: fixed; */
-    position: absolute;
+    background-color: #131419;
+    /* background-color: #f1f1f1; */
+    position: fixed;
+    /* position: absolute; */
     height: 90px;
     z-index: 2;
-    border-bottom: 1px solid #a58c5e;
+    /* border-bottom: 1px solid #a58c5e; */
+    
     
   }
 
@@ -34,9 +36,16 @@ mat-toolbar{
     cursor: pointer;
     padding: 15px 30px;
     border-radius: 8px;
-    background: #f1f1f1;
-    box-shadow:  3px 3px 2px #bdbdbd, 
-    -4px -4px 2px #ffffff;
+    /* background: #f1f1f1; */
+    
+    /* box-shadow:  3px 3px 2px #bdbdbd, 
+    -4px -4px 2px #ffffff; */
+    
+    background: #131419;
+    box-shadow:  
+    -3px -3px 10px rgba(194, 193, 193, 0.164),
+    4px 4px 3px rgb(0, 0, 0);
+
     text-align: center;
     display: inline-block;
     font-size: 12pt;
@@ -44,15 +53,23 @@ mat-toolbar{
   }
   
   .navbar a{
-    margin-right: 10px;
+    margin-right: 20px;
     color: #a58c5e;
+    
     text-decoration: none;
     cursor: pointer;
     padding: 15px 25px 15px 25px;
     border-radius: 5px;
-    background: #f1f1f1;
-    box-shadow:  3px 3px 3px #bdbdbd, 
-               -3px -3px 3px #ffffff;
+    /* background: #f1f1f1; */
+    background: #131419;
+    /* box-shadow:  3px 3px 3px #bdbdbd, 
+               -3px -3px 3px #ffffff; */
+
+    box-shadow:  
+    -3px -3px 10px rgba(194, 193, 193, 0.164),
+      4px 4px 3px rgb(0, 0, 0);
+              
+    
     text-align: center;
     display: inline-block;
     font-size: 12pt;
@@ -60,8 +77,12 @@ mat-toolbar{
   }
   
   .navbar a:first-child{
-    box-shadow:  3px 3px 2px #bdbdbd, 
-               -3px -3px 2px #ffffff;
+    background: #131419;
+    box-shadow:  
+    -3px -3px 10px rgba(194, 193, 193, 0.164),
+    4px 4px 3px rgb(0, 0, 0);
+    /* box-shadow:  3px 3px 2px #bdbdbd, 
+               -3px -3px 2px #ffffff; */
     margin-right: 20px;
     padding: 20px 20px;
     border-radius: 50px;
@@ -69,10 +90,16 @@ mat-toolbar{
   }
   
   .navbar a:hover, .logo:hover{
+    color: rgb(194, 194, 194);
     /* border-radius: 50px; */
-    background: #f1f1f1;
-    box-shadow: inset 4px 4px 4px #bdbdbd, 
-    inset -4px -4px 5px #ffffff;
+    /* background: #f1f1f1; */
+    background: #131419;
+    /* box-shadow: inset 4px 4px 4px #bdbdbd, 
+    inset -4px -4px 5px #ffffff; */
+    box-shadow:  
+    inset -3px -3px 10px rgba(194, 193, 193, 0.164),
+    inset 4px 4px 3px rgb(0, 0, 0);
+
   
   }
   
