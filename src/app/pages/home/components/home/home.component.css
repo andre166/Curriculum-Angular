@@ -7,22 +7,16 @@
 #btn-descer{
     margin-top: 12rem;
     font-size: 25pt;
-    cursor: pointer;
-    color: #eeeded;
-    border: 2px solid #eeeded;
+    color: #9c814e;
     border-radius: 100%;
     padding: 6px 12px;
   
 }
 
-#btn-descer:hover{
-    color: #9c814e;
-    background-color: #f1f1f1;
-    border: 2px solid #9c814e;
-
-}
 
 #txt-intro{
+    /* max-width: 1000px;
+    background-color: #131419; */
     font-family: 'Dancing Script', cursive;
     font-family: 'Russo One', sans-serif;
     display: flex;
@@ -34,7 +28,9 @@
     text-align: center;
     margin-top: 20rem;
     color: #a58c5e;
-    text-shadow: 1px 0.5px 0.3px #646464;
+    text-shadow: 
+        1px 0.5px 1px #000000,
+        1px 0.5px 4px #202020;
 }
 
 #txt-subtitulo{
