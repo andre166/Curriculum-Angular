@@ -1,14 +1,61 @@
 .section2{
-    height: 40vh;
-    background-color: rgb(233, 233, 233);
+    /* background-color: rgb(233, 233, 233); */
+    padding-bottom: 10px;
+    background: #f1f1f1;
+    /* max-width: 1100px; */
 }
 
-.certificados{
-    max-width: 1100px;
+.sec2-container{
+    /* max-width: 1400px !important; */
 }
 
 .example-card{
-    margin: 10px;
-    /* width: 14rem; */
+    left: 40px; 
+    max-width: 20rem;
+    /* align-items: center; */
+    overflow: hidden;
+    height: 400px !important;
+    /* background: #f1f1f1; */
+    margin: 20px;
+    border: none !important;
+    border-radius: 15px;
+    background: #f1f1f1;
+    background: #f1f1f1;
+    box-shadow:  6px 8px 8px #e2e2e2, 
+                /* inset 6px 8px 10px #c5c5c5,
+                inset -6px -6px 8px #ffffff, */
+               -10px -8px 15px #ffffff;
 }
 
+.example-card:hover{
+
+    box-shadow:  inset 6px 8px 8px #e2e2e2, 
+    inset  -10px -8px 15px #ffffff;
+
+}
+
+mat-tab-group{
+    overflow: hidden;
+    height: 550px !important;
+    /* margin: 0px 100px; */
+    max-width: 500px;
+  
+}
+
+mat-card i {
+    font-size: 25pt;
+}
+
+
+.cont{
+    width: 15rem;
+    height: 500px;
+    /* background-color: red; */
+}
+
+@media screen and (max-width:600px) {
+    
+    .example-card{
+        left: 0px;
+    }
+  }

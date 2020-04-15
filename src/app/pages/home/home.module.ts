@@ -16,6 +16,7 @@ import { Section1Component } from './components/section1';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { Section2Component } from './components/section2';
+import {MatTabsModule} from '@angular/material/tabs';
 
 //
 @NgModule({
@@ -37,7 +38,8 @@ import { Section2Component } from './components/section2';
     ReactiveFormsModule,
     FlexLayoutModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule
   ],
   exports: [
     Section1Component,
