@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {  MatSidenav } from '@angular/material/sidenav';
 
 
 @Component({
@@ -9,6 +10,15 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class AppComponent {
   title = 'curriculum';
+
+  @ViewChild('sidenav') sidenav: MatSidenav;
+
+  reason = '';
+
+  close(reason: string) {
+    this.reason = reason;
+    this.sidenav.close();
+  }
  
   
 

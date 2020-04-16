@@ -1,7 +1,54 @@
-<div fxFlexFill >
-  <app-header fxFlexFill ></app-header>
 
-</div>
+
+
+  
+  
+
+    
+    
+<app-header></app-header>
+
+<mat-sidenav-container
+class="example-container" (backdropClick)="close('backdrop')" >
+<mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+  <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
+</mat-sidenav>
+
+<mat-sidenav-content>
+
+  <mat-toolbar fxHide.gt-sm="true">
+
+    <a class="logo"  routerLink="/home"> 
+              
+      Home 
+  </a>
+    
+    <span class="example-spacer"></span>
+
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-button  class="btn-hamburguer-morph" (click)="sidenav.open()">
+        <span class="material-icons">menu</span>
+      </button>
+
+    </div>
+
+  </mat-toolbar>
+
+    <router-outlet></router-outlet>
+
+    
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<app-footer></app-footer>     
+
+
+
+
+          
+
+
     
 
 

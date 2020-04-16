@@ -67,7 +67,9 @@ import {MatCardModule} from '@angular/material/card';
 
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -53,17 +53,17 @@
 	font-family: Helvetica,Arial,sans-serif;
     margin-top: 0px;
     padding: 0px;
-    position: absolute;
+    /* position: absolute; */
 
 } 
 
-.bb{
+/* .bb{
     background-image: url('../../../../../assets/imagens/coffee.jpg');
     overflow: hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
   @media screen and (max-width:960px) {
     #btn-descer{

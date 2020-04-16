@@ -24,6 +24,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     FlexLayoutModule,
     FontAwesomeModule,
     MatGridListModule,
+
     
   ]
 })
