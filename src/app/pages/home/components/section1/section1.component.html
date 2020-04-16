@@ -1,4 +1,4 @@
-<div class="section1"  [ngStyle.gt-sm]="{'height.vh': 100} ">
+<div class="section1"  [ngStyle.gt-sm]="{'height.vh': 90} ">
 
       <div class="bounds" fxFlexFill fxLayoutAlign="center center">
     
@@ -31,11 +31,11 @@
                             <div class="h1-sobre-mim">Sobre mim</div>
                             <div class="border"></div>
 
-                            <p>Nome: André de Souza Mesquita Bezerra Lima</p>
-                            <p>Email: andremp1927@hotmail.com</p>
-                            <p>Idade: 26</p>
-                            <p>Escolaridade: Cursando 5º Período de análise e desenvolvimento de sistemas</p>
-                            <p class="h2-sobre-mim"> Resumo</p>
+                            <p><span>Nome:</span> André de Souza Mesquita Bezerra Lima</p>
+                            <p><span>Email:</span> andremp1927@hotmail.com</p>
+                            <p><span>Idade: </span> 26</p>
+                            <p><span>Escolaridade:</span> Cursando 5º Período de análise e desenvolvimento de sistemas</p>
+                            <h4 class="h2-sobre-mim"> Resumo</h4>
                             <div class="border w-100"></div>
                             
                             
@@ -49,8 +49,25 @@
 
                             </p>
                            
-                            <div fxLayoutAlign="center center">
-                                <div  class="btn-morph">Fale comigo!</div>
+                            <div fxLayoutAlign="space-between" class="btn-morph-container"
+                            fxLayout="row" 
+                            
+                            >
+                            <!-- fxLayout.xs="column"  -->
+
+                                <!-- Div para alinhar os btn-morph -->
+                                <div fxHide.xs="true"></div>
+
+
+                                <a class="btn-morph">Fale comigo!</a>
+                               
+                                    
+                                    <span matTooltip="Download do Curriculum Vitae"> 
+                                        <a  class="btn-morph-cv"><i class="fas fa-file-download"></i> CV </a>  
+                                    </span> 
+                                
+
+                               
 
                             </div>
                         </div>
@@ -64,8 +81,11 @@
             
         </div>
         
-      </div>
-  </div>
+    </div>
+    
+    
+    
+</div>
  
 
 

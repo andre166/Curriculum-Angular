@@ -30,6 +30,7 @@ import {MatCardModule} from '@angular/material/card';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +57,7 @@ import {MatCardModule} from '@angular/material/card';
     ProjetosRoutingModule,
     FontAwesomeModule,
     MatGridListModule,
+ 
 
 
 

@@ -69,7 +69,7 @@ mat-toolbar{
     -3px -3px 3px rgba(194, 193, 193, 0.164),
       4px 4px 3px rgb(0, 0, 0);
               
-    
+      padding: 15px 25px 15px 25px;
     text-align: center;
     display: inline-block;
     font-size: 12pt;

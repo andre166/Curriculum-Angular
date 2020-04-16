@@ -7,7 +7,7 @@
 #btn-descer{
     margin-top: 12rem;
     font-size: 25pt;
-    color: #9c814e;
+    color: #fff;
     border-radius: 100%;
     padding: 6px 12px;
   
@@ -56,6 +56,14 @@
     position: absolute;
 
 } 
+
+.bb{
+    background-image: url('../../../../../assets/imagens/coffee.jpg');
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
   @media screen and (max-width:960px) {
     #btn-descer{

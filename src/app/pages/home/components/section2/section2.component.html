@@ -15,13 +15,13 @@
   
 
     <div fxFlex="50" fxLayout="column">
-      <div  fxLayoutAlign="center center">
-        <div class="tracado"></div> <h1> Cursos</h1>
+      <div  fxLayoutAlign="center center"  [ngStyle.xs]="{'margin-top.em': 4} ">
+        <div class="tracado" ></div> <h1> Cursos</h1>
     </div>
 
           <mat-tab-group>
 
-            <mat-tab label="Angular">
+            <mat-tab  label="Angular" >
 
               <mat-card class="example-card">
                 <mat-card-header>
@@ -78,7 +78,7 @@
             </mat-tab>
 
           </mat-tab-group>
-          <a class="btn-morphism">Veja mais</a>  
+          <a  [ngStyle.xs]="{'margin-left.px': 7}" class="btn-morphism">Veja mais</a>  
         </div>
         
 
@@ -89,7 +89,7 @@
 
     <!-- ======================== //////////////////////////////////////////////////////////////////-->
 <div fxLayout="column" fxFlex="50">
-  <div  fxLayoutAlign="center center">
+  <div  fxLayoutAlign="center center" [ngStyle.xs]="{'margin-top.em': 4} ">
     <div class="tracado"></div> <h1> Projetos</h1>
  </div>
           <mat-tab-group>
@@ -104,7 +104,7 @@
                 <img mat-card-image src="../../../../../assets/imagens/projetos/reaCad.PNG" >
                 <mat-card-content>
                   <p>
-                    Crud simples com filtros e persintências no local Storage, Requisição http com axios.
+                    Crud simples com filtros, persintências no local Storage, requisição http com axios, Recharts, bootstrap4
                   </p>
                 </mat-card-content>
                 <mat-card-actions>
@@ -117,15 +117,15 @@
             
             <!-- ==================================== -->
 
-            <mat-tab label="Java">
+            <mat-tab label="Portifólio">
               <mat-card class="example-card">
                 <mat-card-header>
                   <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title><i class="fab fa-java"></i> Udemy</mat-card-title>
+                  <mat-card-title>Angular</mat-card-title>
                 </mat-card-header>
-                <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
+                <img mat-card-image src="../../../../../assets/imagens/projetos/portifolio.JPG" alt="Photo of a Shiba Inu">
                 <mat-card-content>
-                  <p>Java8, Spring[boot,Mvc,Thymeleaf],...
+                  <p>Angular 9, Material, Flexbox, neumorphism
                   </p>
                 </mat-card-content>
               
@@ -134,24 +134,23 @@
 
             <!-- ==================================== -->
 
-            <mat-tab label="Sql">
+            <mat-tab label="Lista de tarefas">
               <mat-card class="example-card">
                 <mat-card-header>
                   <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title><i class="fas fa-database"></i> Udemy</mat-card-title>
+                  <mat-card-title>Angular/Java/postgree</mat-card-title>
                 </mat-card-header>
                 <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
                 <mat-card-content>
                   <p>
-                    MySQL, SQL Server e Oracle
+                    descrição do app
                   </p>
-                  <p>T-SQL e PLSQL</p>
                 </mat-card-content>
               </mat-card>
             </mat-tab>
 
           </mat-tab-group>
-          <a class="btn-morphism">Veja mais</a>
+          <a [ngStyle.xs]="{'margin-left.px': 7}" class="btn-morphism">Veja mais</a>
         </div>
 
   </div>
