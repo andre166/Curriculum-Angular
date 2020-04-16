@@ -1,0 +1,23 @@
+#contato-container-imagem{
+
+    background-image: url('../../../../../assets/imagens/42.png');
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 140vh;
+    background-position-y: -130px;
+	font-family: Helvetica,Arial,sans-serif;
+    margin-top: 0px;
+    padding: 0px;
+   
+    /* position: absolute; */
+
+}
+
+.contato-container{
+    height: 100vh;
+}
+.formulario{
+    background-color: #fff;
+}

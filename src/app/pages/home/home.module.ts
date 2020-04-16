@@ -18,6 +18,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { Section2Component } from './components/section2';
 import {MatTabsModule} from '@angular/material/tabs';
 
+
 //
 @NgModule({
   declarations: [

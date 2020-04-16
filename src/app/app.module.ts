@@ -25,6 +25,8 @@ import { HeaderComponent } from './header';
 import { FooterComponent } from './footer';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 
@@ -57,11 +59,8 @@ import {MatCardModule} from '@angular/material/card';
     ProjetosRoutingModule,
     FontAwesomeModule,
     MatGridListModule,
+    MatFormFieldModule,
  
-
-
-
-
     AppRoutingModule
 
 
