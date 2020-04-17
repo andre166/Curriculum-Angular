@@ -35,7 +35,7 @@
 
 
 #img-mapa{
-    width: 95%;
+    width: 90%;
     max-height: 29em;
     border-radius: 35px;
     /* border: 2px solid white; */
@@ -49,6 +49,7 @@
 }
 
 #img-mapa:hover{
+  transform: scale(1.03);
  
 }
 
@@ -72,13 +73,13 @@
 
 .btn-h2{
     padding-right: 20px;
-    margin: 10px 0px 10px 20px;
-    border-radius: 10px;
+    margin: 20px 0px 10px 57px;
+    border-radius: 50px;
     box-shadow:  
      -4px -4px 5px rgba(255, 255, 255, 0.602),
-     4px 4px 5px #cecece,
-    inset -4px -4px 5px rgba(255, 255, 255, 0.602),
-    inset 4px 4px 5px #cecece;
+     4px 4px 5px #cecece;
+    /* inset -4px -4px 5px rgba(255, 255, 255, 0.602),
+    inset 4px 4px 5px #cecece; */
 
 }
 
@@ -93,7 +94,7 @@
 } */
 
 .contato-container{
-    width: 900px;
+    width: 1200px;
     /* height: 80vh; */
     overflow: hidden;
     
@@ -101,7 +102,7 @@
 }
 .formulario-container{
 
-    width: 95%;
+    width: 85%;
     /* max-height: 29em; */
     border-radius: 35px;
     box-shadow: 
