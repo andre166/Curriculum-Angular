@@ -45,7 +45,7 @@
 
 #imagem{
     
-    cursor: pointer;
+    /* cursor: pointer; */
     background: url('../../../../../assets/imagens/coffee.jpg');
     overflow: hidden;
     background-attachment: fixed;

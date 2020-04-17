@@ -34,3 +34,18 @@ html, body{
     inset -4px -4px 5px #ffffff;
   
   }
+
+ 
+
+  .w-75{
+    width: 75% !important;
+  }
+
+  .w-50{
+    width: 50% !important;
+
+  }
+  .w-25{
+    width: 25% !important;
+
+  }
