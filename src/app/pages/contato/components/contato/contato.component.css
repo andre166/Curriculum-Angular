@@ -1,12 +1,12 @@
 #contato-container-imagem{
 
-    background-image: url('../../../../../assets/imagens/42.png');
+    background-image: url('../../../../../assets/imagens/rain2.jpg');
     overflow: hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% 140vh;
-    background-position-y: -130px;
+    background-size: 100%;
+    /* background-position-y: 30px; */
 	font-family: Helvetica,Arial,sans-serif;
     margin-top: 0px;
     padding: 10px;
@@ -17,14 +17,17 @@
     
 }
 .mapa{
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-top: 10px;
-    border: 1px solid green;
-    background-color: blanchedalmond;
-    width: 100%;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 30px; */
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 1px solid #c2c2c2;
+    background-color: rgba(190, 190, 190, 0.301);
+    /* width: 100%; */
+    /* padding: 10px; */
 
 }
+
 
 #img-mapa{
     width: 95%;
@@ -32,6 +35,7 @@
     border-radius: 50px;
     border: 5px solid white;
     margin-bottom: 10px;
+    
 }
 
 #img-mapa:hover{
@@ -42,8 +46,19 @@
     margin-bottom: 10px;
 }
 
+.tracado{
+    height: 30px;
+    width: 5px;
+    background-color: #fff;
+    margin-left: 20px;
+}
+
 .mapa h2{
-   margin-left: 20px;
+    font-size: 14;
+    font-weight: 600;
+    margin-left: 5px;
+    color: #fff;
+    text-transform: uppercase;
 
 }
 

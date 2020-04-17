@@ -81,7 +81,7 @@ mat-toolbar{
   }
   
   .navbar a:hover, .logo:hover{
-    color: rgb(194, 194, 194);
+    color: #c2c2c2;
     /* border-radius: 50px; */
     /* background: #f1f1f1; */
     /* box-shadow: inset 4px 4px 4px #bdbdbd, 
