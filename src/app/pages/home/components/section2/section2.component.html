@@ -1,11 +1,12 @@
-<div class="section2" fxLayoutAlign="center center" 
+<div class="section2" fxLayoutAlign="space-around start" 
 
 >
 
 <div fxLayout="row" 
-   class="sec2-container"
-   fxLayout.sm="column" 
-   fxLayout.xs="column" 
+    fxLayoutAlign="space-around center"
+    class="sec2-container"
+    fxLayout.sm="column" 
+    fxLayout.xs="column" 
    >
    
    <!-- <div  fxLayout="row" fxLayoutAlign="center center">
@@ -14,84 +15,93 @@
 
   
 
-    <div fxFlex="50" fxLayout="column">
-      <div  fxLayoutAlign="center center"  [ngStyle.xs]="{'margin-top.em': 4} ">
+    <!-- <div  fxLayout="column" > -->
+    <div fxLayout="column">
+      <div  fxLayoutAlign="center center"  [ngStyle.xs]="{'margin-top.em': 2} ">
         <div class="tracado" ></div> <h1> Certificados</h1>
-    </div>
+      </div>
+        
 
-          <mat-tab-group>
+      <mat-tab-group>
 
-            <mat-tab  label="Angular" >
+        <mat-tab  label="Angular" >
 
-              <mat-card class="example-card">
-                <mat-card-header>
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title><i class="fab fa-angular"></i> Udemy</mat-card-title>
-                </mat-card-header>
-                <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
-                <mat-card-content>
-                  <p>
-                    Angular 9, Flexbox, Angular Material, hammerJS...
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  
-                
-                </mat-card-actions>
-              </mat-card>
-
-            </mat-tab>
-            
-            <!-- ==================================== -->
-
-            <mat-tab label="Java">
-              <mat-card class="example-card" >
-                <mat-card-header>
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title><i class="fab fa-java"></i> Udemy</mat-card-title>
-                </mat-card-header>
-                <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
-                <mat-card-content>
-                  <p>Java8, Spring[boot,Mvc,Thymeleaf],...
-                  </p>
-                </mat-card-content>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title><i class="fab fa-angular"></i> Udemy</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                Angular 9, Flexbox, Angular Material, hammerJS...
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
               
-              </mat-card>
-            </mat-tab>
+            
+            </mat-card-actions>
+          </mat-card>
 
-            <!-- ==================================== -->
+        </mat-tab>
+        
+        <!-- ==================================== -->
 
-            <mat-tab label="Sql">
-              <mat-card class="example-card">
-                <mat-card-header>
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title><i class="fas fa-database"></i> Udemy</mat-card-title>
-                </mat-card-header>
-                <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
-                <mat-card-content>
-                  <p>
-                    MySQL, SQL Server e Oracle
-                  </p>
-                  <p>T-SQL e PLSQL</p>
-                </mat-card-content>
-              </mat-card>
-            </mat-tab>
+        <mat-tab label="Java">
+          <mat-card class="example-card" >
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title><i class="fab fa-java"></i> Udemy</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>Java8, Spring[boot,Mvc,Thymeleaf],...
+              </p>
+            </mat-card-content>
+          
+          </mat-card>
+        </mat-tab>
 
-          </mat-tab-group>
-          <a  [ngStyle.xs]="{'margin-left.px': 7}" class="btn-morphism">Veja mais</a>  
+        <!-- ==================================== -->
+
+        <mat-tab label="Sql">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title><i class="fas fa-database"></i> Udemy</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../../../../../assets/imagens/certificados/cert1.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                MySQL, SQL Server e Oracle
+              </p>
+              <p>T-SQL e PLSQL</p>
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+
+      </mat-tab-group>
+      <div fxLayoutAlign="center center">
+        <a  [ngStyle.xs]="{'margin-left.px': 7}" class="btn-morphism">Veja mais</a>  
+      </div>
+   
         </div>
         
 
-   <div fxLayout="row-reverse"  fxFlex="50" class="cont">
+      <!-- <div fxLayout="row-reverse"  fxFlex="50" class="cont">
 
-   </div>
+      </div> -->
 
 
-    <!-- ======================== //////////////////////////////////////////////////////////////////-->
-<div fxLayout="column" fxFlex="50">
-  <div  fxLayoutAlign="center center" [ngStyle.xs]="{'margin-top.em': 4} ">
-    <div class="tracado"></div> <h1> Projetos</h1>
- </div>
+        <!-- ======================== //////////////////////////////////////////////////////////////////-->
+
+    <!-- <div  fxLayout="column" > -->
+
+        <div  fxLayout="column">
+          <div  fxLayoutAlign="center center" [ngStyle.xs]="{'margin-top.em': 2} ">
+            <div class="tracado"></div> <h1> Projetos</h1>
+          </div>
+
           <mat-tab-group>
 
             <mat-tab label="React Cad">
@@ -150,7 +160,11 @@
             </mat-tab>
 
           </mat-tab-group>
-          <a [ngStyle.xs]="{'margin-left.px': 7}" class="btn-morphism">Veja mais</a>
+
+          <div fxLayoutAlign="center center">
+            <a [ngStyle.xs]="{'margin-left.px': 7,'margin-bottom.px': 10 }" class="btn-morphism">Veja mais</a>
+          </div>
+       
         </div>
 
   </div>

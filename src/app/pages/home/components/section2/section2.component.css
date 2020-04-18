@@ -9,7 +9,7 @@
 }
 
 .sec2-container{
-    /* max-width: 1400px !important; */
+    width: 1400px !important;
 }
 
 .example-card{
@@ -61,7 +61,7 @@ mat-tab-group{
     overflow: hidden;
     height: 550px !important;
     /* margin: 0px 100px; */
-    max-width: 500px;
+    /* max-width: 500px; */
     /* border: 1px solid black; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

@@ -53,3 +53,20 @@ mat-toolbar{
     -3px -3px 3px rgba(194, 193, 193, 0.164),
     4px 4px 3px rgb(0, 0, 0);
     }
+    mat-sidenav{
+
+      background-color: #131419;
+
+    }
+  
+
+    mat-list mat-list-item a{
+
+      text-decoration: none;
+      cursor: pointer;
+
+      color: #a58c5e;
+      border-radius: 20px;
+      margin-right: 20px;
+    
+    }

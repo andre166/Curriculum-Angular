@@ -23,6 +23,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -44,6 +45,7 @@ import { FooterComponent } from './footer';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    MatListModule,
     FlexLayoutModule,
     FontAwesomeModule,
     MatGridListModule,
