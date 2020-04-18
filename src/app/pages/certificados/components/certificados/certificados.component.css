@@ -1,0 +1,20 @@
+.certificado-section{
+    /* max-width: 900px; */
+    min-height: 92vh;
+}
+
+.certificado-container{
+    width: 70%;
+    margin: 25px 0px;
+}
+
+/* mat-accordion{
+    width: 100%;
+} */
+
+.example-card{
+    max-width: 13.5em;
+    margin-right: 12px;
+    margin-top: 12px;
+    /* height: 400px !important; */
+}

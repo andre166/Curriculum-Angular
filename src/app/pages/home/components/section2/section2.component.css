@@ -14,9 +14,9 @@
 
 .example-card{
     left: 40px; 
-    max-width: 20rem;
     /* align-items: center; */
     overflow: hidden;
+    max-width: 20rem;
     height: 400px !important;
     /* background: #f1f1f1; */
     margin: 20px;
