@@ -1,72 +1,63 @@
 mat-toolbar{
-    background-color: #131419;
-    height: 90px;
-   
-  }
+  background-color: #131419;
+  height: 90px;
+}
 
-  .logo{
-    color: #a58c5e;
-    text-decoration: none;
-    cursor: pointer;
-    
-    padding: 3px 15px;
-    border-radius: 5px;
-    font-size: 11pt;
-    font-weight: 600;
-    
-    background: #131419;
-    box-shadow:  
+#img-bg-appComponent{
+  background-image: url('../assets/imagens/ceramic.jpg');
+  overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.logo{
+  color: #a58c5e;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 3px 15px;
+  border-radius: 5px;
+  font-size: 11pt;
+  font-weight: 600;
+  background: #131419;
+  box-shadow:  
+  -3px -3px 3px rgba(194, 193, 193, 0.164),
+  4px 4px 3px rgb(0, 0, 0);
+  text-align: center;
+  display: inline-block;
+}
+
+.logo:hover{
+  color: rgb(194, 194, 194);
+  background: #131419;
+  box-shadow:  
+  inset -3px -3px 3px rgba(194, 193, 193, 0.164),
+  inset 4px 4px 3px rgb(0, 0, 0);
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.btn-hamburguer-morph{
+  color: #a58c5e;
+  border-radius: 20px;
+  margin-right: 20px;
+  background: #131419;
+  box-shadow:  
     -3px -3px 3px rgba(194, 193, 193, 0.164),
     4px 4px 3px rgb(0, 0, 0);
+}
 
-    text-align: center;
-    display: inline-block;
-    
-   
-  }
+mat-sidenav{
+  background-color: #131419;
+}
 
-  .logo:hover{
-    color: rgb(194, 194, 194);
-    /* border-radius: 50px; */
-    /* background: #f1f1f1; */
-    /* box-shadow: inset 4px 4px 4px #bdbdbd, 
-    inset -4px -4px 5px #ffffff; */
-    background: #131419;
-    box-shadow:  
-    inset -3px -3px 3px rgba(194, 193, 193, 0.164),
-    inset 4px 4px 3px rgb(0, 0, 0);
+mat-list mat-list-item a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #a58c5e;
+  border-radius: 20px;
+  margin-right: 20px;
 
-  
-  }
-
-  .example-spacer {
-    flex: 1 1 auto;
-  }
-
-  .btn-hamburguer-morph{
-    color: #a58c5e;
-    border-radius: 20px;
-    margin-right: 20px;
-    background: #131419;
-
-    box-shadow:  
-    -3px -3px 3px rgba(194, 193, 193, 0.164),
-    4px 4px 3px rgb(0, 0, 0);
-    }
-    mat-sidenav{
-
-      background-color: #131419;
-
-    }
-  
-
-    mat-list mat-list-item a{
-
-      text-decoration: none;
-      cursor: pointer;
-
-      color: #a58c5e;
-      border-radius: 20px;
-      margin-right: 20px;
-    
-    }
+}

@@ -1,103 +1,77 @@
-<div fxLayoutAlign="center center" id="contato-container-imagem">
+<div fxLayoutAlign="center center">
 
-  <div class="contato-container" fxLayout="column" fxLayoutAlign="center center" fxLayout.sm="column" 
-    fxLayout.xs="column" > 
+  <div class="contato-container" fxLayout="column" fxLayoutAlign="center center" fxLayout.sm="column" fxLayout.xs="column" > 
 
-    <div class="mapa">
-
-      <div fxLayout="row" fxLayoutAlign="start start" fxLayoutAlign.xs="center center" >
-
-        <div class="btn-h2-container" [ngStyle.xs]="{'margin.px': 0,'margin-top.px': 10}">
-          <div  fxLayoutAlign="center center" class="btn-h2">
-            <h2>Bem aqui <i class="fas fa-map-marked-alt"></i> </h2>
-          </div>
-        </div>
-        
-       
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <div  fxLayoutAlign="center center" class="btn-h2">
+        <h2>Bem aqui <i class="fas fa-map-marked-alt"></i> </h2>
       </div>
+    </div>
       
+    <div class="mapa-container" fxLayout="row">
+      <span matTooltip="Ver localização no google maps" matTooltipPosition="above" fxLayout="row"> 
+        <a target="_blank" fxLayoutAlign="center center" href="https://www.google.com/maps/place/Maria+Paula,+Niter%C3%B3i+-+RJ,+24325-240/@-22.879255,-43.034723,16z/data=!4m5!3m4!1s0x998fba7bd6d561:0x4dbe63eaf2e6c5b7!8m2!3d-22.8791374!4d-43.0348213?hl=pt-BR">
+          <img id="img-mapa" src="../../../../../assets/imagens/gps-minha-casa.JPG">
+        </a>
+      </span>
+    </div>
+
+    <div class="formulario-container" fxLayout="column" >
+
+      <div fxLayout="row" fxLayoutAlign="center center"> 
+        <h2>Mande-me um email <i class="far fa-envelope"></i></h2>
+      </div>
+
       <div fxLayoutAlign="center center">
-        <div class="mapa-container" fxLayout="row" [ngStyle.xs]="{'padding-top.px': 15, 'padding-bottom.px': 15 }">
-          <span matTooltip="Ver localização no google maps" matTooltipPosition="above" fxLayout="row"> 
-
-          <a fxLayoutAlign="center center" target="_blank"
-            href="https://www.google.com/maps/place/Maria+Paula,+Niter%C3%B3i+-+RJ,+24325-240/@-22.879255,-43.034723,16z/data=!4m5!3m4!1s0x998fba7bd6d561:0x4dbe63eaf2e6c5b7!8m2!3d-22.8791374!4d-43.0348213?hl=pt-BR">
-            <img id="img-mapa" src="../../../../../assets/imagens/gps-minha-casa.JPG">
-          </a>
-          </span>
-        </div>
+        <div class="border-custom" ></div>
       </div>
 
-        <div  fxLayoutAlign="center center">
-    
+      <form>
 
-       
+        <div fxLayoutAlign="space-around start"  fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayoutAlign.xs="center center">
 
-        <div class="formulario-container" fxLayout="column" >
-
-              <div fxLayout="row" fxLayoutAlign="center center"> 
-                <h2>Mande-me um email <i class="far fa-envelope"></i></h2>
-              </div>
-
-              <div fxLayoutAlign="center center">
-                <div class="border-custom" ></div>
-
-              </div>
-
-          <form>
-              <div fxLayoutAlign="space-around start"  fxLayout="row"
-              fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayoutAlign.xs="center center">
-
-              
-
-                <!-- ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
-                        <div>
-                            <mat-form-field appearance="outline">
-                              <mat-label>Nome</mat-label>
-                              <input type="text" matInput placeholder="Nome">
-                              
-                            </mat-form-field>
-                        </div>
-                <!-- ==================================== -->
-                        <div>
-                          <mat-form-field appearance="outline">
-                            <mat-label>Email</mat-label>
-                            <input type="email" matInput placeholder="Email">
-                            
-                          </mat-form-field>
-                        </div>
-
-                <!-- ==================================== -->
-                        <div>
-                          <mat-form-field>
-                            <mat-label>Assunto</mat-label>
-                            <mat-select disableRipple>
-                              <mat-option value="1">Duvidas</mat-option>
-                              <mat-option value="2">FeddBack</mat-option>
-                              <mat-option value="3">Outros</mat-option>
-                            </mat-select>
-                          </mat-form-field>
-                        </div>
-                <!-- ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
-
+          <div>
+              <mat-form-field appearance="outline">
+                <mat-label>Nome</mat-label>
+                <input type="text" matInput placeholder="Nome">
                 
-              </div> <!-- Final da row -->
+              </mat-form-field>
+          </div>
+          <!-- ==================================== -->
+          <div>
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput placeholder="Email">
+              
+            </mat-form-field>
+          </div>
 
-                      <div fxLayoutAlign="center center">
-                        <mat-form-field class="w-50">
-                          <mat-label>Digite a menssagem</mat-label>
-                          <textarea class="txtArea" matInput placeholder="Ex. Como estou me sentindo..."></textarea>
-                        </mat-form-field>
-
-                      </div>
-                      <div fxLayoutAlign="center center" >
-                        <a type="button" class="btn-enviar">Enviar</a>
-
-                      </div>
-               <!-- ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
-              </form>
+          <!-- ==================================== -->
+          <div>
+            <mat-form-field>
+              <mat-label>Assunto</mat-label>
+              <mat-select disableRipple>
+                <mat-option value="1">Duvidas</mat-option>
+                <mat-option value="2">FeddBack</mat-option>
+                <mat-option value="3">Outros</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+  
         </div>
-      </div>
+
+        <div fxLayoutAlign="center center">
+          <mat-form-field class="w-50">
+            <mat-label>Digite a menssagem</mat-label>
+            <textarea class="txtArea" matInput placeholder="Ex. Como estou me sentindo..."></textarea>
+          </mat-form-field>
+        </div>
+
+        <div fxLayoutAlign="center center" >
+          <a type="button" class="btn-enviar">Enviar</a>
+        </div>
+    
+      </form>
     </div>
   </div> 
 </div>

@@ -1,66 +1,31 @@
 
-              <mat-toolbar fxHide.lt-md="true">
-               
-                <a class="logo"  routerLink="/home"> 
-              
-                    Home 
-                </a>
-                  
-                  <span class="example-spacer"></span>
-            
-                  <div class="navbar" fxShow="true" fxHide.lt-md="true">
-                    <div class="example-button-row">
+<mat-toolbar fxHide.lt-md="true">
   
-                      <a class="morph-menu-btn" (click)="CurriculumAlert()">
-         
-                        <i class="fas fa-file-download"></i> CV
-                        
-                      </a>
-  
-                      <a class="morph-menu-btn"  routerLink="/certificados">
-                       
-                        Certificados 
-                      </a>
-            
-                        <a class="morph-menu-btn"   routerLink="/contato">
-                           
-                            Contato 
-                        </a>
-            
-                        <a class="morph-menu-btn"  routerLink="/projetos">
-                         
-                          Projetos 
-                        </a>
-            
-                    </div>
-                  </div>
-                
-                  <div fxShow="true" fxHide.gt-sm="true">
-                    <button mat-button  class="btn-hamburguer-morph">
-                      <span class="material-icons">menu</span>
-                    </button>
-                  </div>
-                  
-            
-                </mat-toolbar>
-         
-             
-              
-                <!-- <mat-sidenav-container
-                class="example-container" (backdropClick)="close('backdrop')">
-              <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
-                <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
-              </mat-sidenav>
-  
-              
-              <mat-sidenav-content >
-  
-                
-   
-              </mat-sidenav-content>
-              
-            </mat-sidenav-container> -->
+  <a class="logo"  routerLink="/home"> Home</a>
+    
+    <span class="example-spacer"></span>
 
+    <div class="navbar" fxShow="true" fxHide.lt-md="true">
+      <div class="example-button-row">
+
+        <a class="morph-menu-btn" (click)="CurriculumAlert()"><i class="fas fa-file-download"></i> CV</a>
+
+        <a class="morph-menu-btn"  routerLink="/certificados">Certificados</a>
+
+        <a class="morph-menu-btn"   routerLink="/contato"> Contato</a>
+
+        <a class="morph-menu-btn"  routerLink="/projetos">Projetos </a>
+
+      </div>
+    </div>
+  
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-button  class="btn-hamburguer-morph">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+    
+  </mat-toolbar>
         
 
            

@@ -1,149 +1,45 @@
-#contato-container-imagem{
-
-    /* background-image: url('../../../../../assets/imagens/rain2.jpg');
-    overflow: hidden;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
-    background-position-y: 30px;
-    margin-top: 0px; 
-    background-color: black;
-    overflow: hidden;
-    
-    /* position: absolute; */
-    
-	font-family: Helvetica,Arial,sans-serif;
-    /* padding: 10px; */
-    background-color: #ebebeb;
-    
-}
-
-.mapa{
-    /* border-top-left-radius: 30px;
-    border-top-right-radius: 30px; */
-    border-radius: 10px;
-    /* border: 1px solid #c2c2c2; */
-    background-color: #ebebeb;
-    /* width: 100%; */
-    /* padding: 10px; */
-    margin: 20px 15px 25px 15px;
-    /* box-shadow:  
-    -6px -6px 5px rgba(255, 255, 255, 0.712),
-    6px 6px 5px rgb(187, 187, 187); */
-
-    box-shadow: 
-    -10px -10px 5px rgba(255, 255, 255, 0.712),
-    10px 10px 5px #cecece;
-
+.contato-container{
+    max-width: 1000px;
+    padding: 0px 10px;
 }
 
 .mapa-container{
-    width: 90%;
-    border-radius: 35px;
-    padding: 30px 0px;
-    margin: 20px 30px;
-    box-shadow: 
-    inset -10px -10px 5px rgba(255, 255, 255, 0.712),
-    inset 10px 10px 5px #cecece;
-    
+    border-radius:5px;
 }
-#img-mapa{
-    max-width: 90%;
-    max-height: 29em;
-    border-radius: 35px;
-    /* border: 2px solid white; */
-    box-shadow: 
-    /* -5px -5px 5px rgba(255, 255, 255, 0.712), */
-     5px 5px 4px #cecece;
-     margin: 0px;
-     padding: 0px;
-   
 
-    
+#img-mapa{
+    max-height: 29em;
+    border-radius: 10px;
+    width: 97%;
 }
 
 #img-mapa:hover{
-  transform: scale(1.03);
- 
+    border-radius: 10px;
+    transform: scale(1.03);
 }
 
-.tracado{
-    height: 30px;
-    width: 5px;
-    background-color: #a58c5e;
-    /* background-color: #131419ca; */
-    margin-left: 20px;
-}
-
-.mapa h2{
+.contato-container h2{
     font-size: 12pt;
     font-weight: 600;
-    margin-left: 5px;
     color: #a58c5e;
     text-transform: uppercase;
     padding: 0px;
-
-}
-
-.btn-h2-container{
-    padding: 10px;
-    margin: 20px 0px 10px 57px;
-    border-radius: 50px;
-    box-shadow:  
-    inset -3px -3px 4px rgba(255, 255, 255, 0.602),
-    inset 3px 3px 4px #cecece; 
-   
 }
 
 .btn-h2{
     padding: 0px 20px;
-    /* margin: 20px 0px 10px 57px; */
     border-radius: 50px;
-    /* box-shadow:  
-     -4px -8px 5px rgba(255, 255, 255, 0.602),
-     4px 8px 5px #cecece,
-    inset -4px -8px 5px rgba(255, 255, 255, 0.602),
-    inset 4px 8px 5px #cecece;  */
-    /* border: 2px solid #ebebeb; */
-    background-color: #131419;
-    /* box-shadow:  
-     -4px -4px 5px rgba(255, 255, 255, 0.602),
-     4px 4px 5px #cecece,
-    inset -4px -4px 5px rgba(255, 255, 255, 0.602),
-    inset 4px 4px 5px #cecece;  */
+    background-color: #f3f3f3;
+    margin: 15px 0px;
 
 }
 
-/* .btn-h2:hover{
-    padding-right: 20px;
-    margin: 10px 0px 10px 20px;
-    border-radius: 10px;
-    box-shadow:  
-    inset -4px -4px 5px rgba(255, 255, 255, 0.602),
-    inset 4px 4px 5px #cecece;
-
-} */
-
-.contato-container{
-    width: 1200px;
-    /* height: 80vh; */
-    overflow: hidden;
-    
-
-}
 .formulario-container{
     padding: 20px 20px;
-    margin: 35px 40px;
-    width: 88%;
-    /* max-height: 29em; */
-    border-radius: 35px;
-    box-shadow: 
-    inset -10px -10px 5px rgba(255, 255, 255, 0.712),
-    inset  10px 10px 5px #cecece;
-     /* margin: 25px 20px 30px 20px; */
-     /* padding: 15px; */
-  
+    margin: 15px 20px;
+    width: 75%;
+    border-radius: 5px;
+     background-color: #fff;
 }
 
 .txtArea{
@@ -174,7 +70,6 @@
 }
 
 .border-custom{
-   
     width: 75%;
     height: 2px;
     background-color: #b8b8b8;
@@ -182,23 +77,3 @@
     margin-bottom: 30px;
   }
 
-
-.example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .example-full-width {
-    width: 100%;
-  }
-
-  @media screen and (max-width:600px) {
-    .mapa-container{
-        box-shadow: 
-        inset -4px -4px 4px rgba(255, 255, 255, 0.712),
-        inset 5px 5px 5px #cecece;
-        
-    }
-
-  }

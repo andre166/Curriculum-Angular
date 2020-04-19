@@ -1,74 +1,53 @@
 <app-header></app-header>
 
-<mat-sidenav-container
-class="example-container" (backdropClick)="close('backdrop')" >
-<mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')" >
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
 
-  <mat-list>
-
-    <mat-list-item> 
-      <a class="morph-menu-btn" routerLink="/home">
-        Home
-      </a>
-    </mat-list-item>
-
-    <mat-list-item> 
-      <a class="morph-menu-btn" (click)="CurriculumAlert()">
-        <i class="fas fa-file-download"></i> CV
-      </a>
-    </mat-list-item>
-
-    <mat-list-item> 
-      <a class="morph-menu-btn"  routerLink="/certificados">
-        Certificados 
-      </a>
-    </mat-list-item>
-
-    <mat-list-item>
-      <a class="morph-menu-btn"   routerLink="/contato">
-          Contato 
-      </a>
-    </mat-list-item>
-
-    <mat-list-item>
-      <a class="morph-menu-btn"  routerLink="/projetos">
-        Projetos 
-      </a>
-    </mat-list-item>
-
-   </mat-list>
-
-
-
-
+    <mat-list>
+      <mat-list-item> 
+        <a class="morph-menu-btn" routerLink="/home">Home</a>
+      </mat-list-item>
   
-</mat-sidenav>
+      <mat-list-item> 
+        <a class="morph-menu-btn" (click)="CurriculumAlert()"> <i class="fas fa-file-download"></i> CV</a>
+      </mat-list-item>
+  
+      <mat-list-item> 
+        <a class="morph-menu-btn"  routerLink="/certificados">Certificados</a>
+      </mat-list-item>
+  
+      <mat-list-item>
+        <a class="morph-menu-btn"   routerLink="/contato">Contato </a>
+      </mat-list-item>
+  
+      <mat-list-item>
+        <a class="morph-menu-btn"  routerLink="/projetos">Projetos </a>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+  
+    <mat-toolbar fxHide.gt-sm="true">
 
-<mat-sidenav-content>
+      <a class="logo"  routerLink="/home">Home</a>
+      
+      <span class="example-spacer"></span>
+  
+      <div fxShow="true" fxHide.gt-sm="true">
+        <button mat-button  class="btn-hamburguer-morph" (click)="sidenav.open()">
+          <span class="material-icons">menu</span>
+        </button>
+      </div>
+  
+    </mat-toolbar>
 
-  <mat-toolbar fxHide.gt-sm="true">
-
-    <a class="logo"  routerLink="/home"> 
-              
-      Home 
-  </a>
-    
-    <span class="example-spacer"></span>
-
-    <div fxShow="true" fxHide.gt-sm="true">
-      <button mat-button  class="btn-hamburguer-morph" (click)="sidenav.open()">
-        <span class="material-icons">menu</span>
-      </button>
-
+    <div id="img-bg-appComponent">
+      <router-outlet></router-outlet>
     </div>
-
-  </mat-toolbar>
-
-    <router-outlet></router-outlet>
-
-    
+  
   </mat-sidenav-content>
-
+  
 </mat-sidenav-container>
 
 <app-footer></app-footer>     

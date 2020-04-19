@@ -5,22 +5,18 @@
 }
 
 #btn-descer{
-    margin-top: 12rem;
+    margin-top: 7em;
     font-size: 25pt;
-    color: #fff;
+    color: #a58c5e;
     border-radius: 100%;
     padding: 6px 12px;
-  
 }
 
 .img-container{
     height: 93vh;
 }
 
-
 #txt-intro{
-    /* max-width: 1000px;
-    background-color: #131419; */
     font-family: 'Dancing Script', cursive;
     font-family: 'Russo One', sans-serif;
     display: flex;
@@ -38,7 +34,6 @@
 }
 
 #txt-subtitulo{
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,29 +41,6 @@
     color: #888888;
     text-shadow: 0.4px 0.5px 1px #000000;
 }
-
-#imagem{
-    
-    /* cursor: pointer; */
-    background: url('../../../../../assets/imagens/coffee.jpg');
-    overflow: hidden;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-	font-family: Helvetica,Arial,sans-serif;
-    margin-top: 0px;
-    padding: 0px;
-    /* position: absolute; */
-
-} 
-
-/* .bb{
-    background-image: url('../../../../../assets/imagens/coffee.jpg');
-    overflow: hidden;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
   @media screen and (max-width:960px) {
     #btn-descer{

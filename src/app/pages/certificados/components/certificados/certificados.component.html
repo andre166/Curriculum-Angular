@@ -1,206 +1,118 @@
-<div class="certificado-section" fxLayout="column" fxLayoutAlign="center center" fxLayout.sm="column" 
-    fxLayout.xs="column" > 
 
-    <div class="certificado-container" fxLayoutAlign="center center" >
-        
-            <mat-accordion fxFlexFill>
+<div class="certificado-section" fxLayout="column" fxLayoutAlign="center center" fxLayout.sm="column" fxLayout.xs="column" > 
+  
+  <div id="title-certificado" fxLayoutAlign="center center" [ngStyle.xs]="{'font-size.pt': 16}">
+    Certificados <i class="fas fa-certificate"></i>
+  </div>
 
-                <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      Java
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-              
-             <div 
-                fxLayout="row" fxLayoutAlign="center center"
-                fxLayout.sm="column" 
-                fxLayout.xs="column" 
-             >
+  <div class="certificado-container" fxLayoutAlign="center center"  [ngStyle.lt-md]="{'width': '100%'}">
+      
+    <mat-accordion fxFlexFill>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Java
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+            
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayout.sm="column" fxLayout.xs="column">
 
-             
-                    <mat-card class="example-card">
-                        <mat-card-header>
-                          <div mat-card-avatar class="example-header-image"></div>
-                          <mat-card-title>Shiba Inu</mat-card-title>
-                        </mat-card-header>
-                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                          <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                            bred for hunting.
-                          </p>
-                        </mat-card-content>
-                      </mat-card>
+          <mat-card class="example-card">
+            <img mat-card-image src="../../../../../assets/imagens/certificados/java-spring.jpg" alt="Foto de certificado java">
+          </mat-card>
 
-                      <mat-card class="example-card">
-                        <mat-card-header>
-                          <div mat-card-avatar class="example-header-image"></div>
-                          <mat-card-title>Shiba Inu</mat-card-title>
-                        </mat-card-header>
-                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                          <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                            bred for hunting.
-                          </p>
-                        </mat-card-content>
-                      </mat-card>
+          <mat-card class="example-card">  
+            <img mat-card-image src="../../../../../assets/imagens/certificados/java8-01.jpg" alt="Foto de certificado java">
+          </mat-card>
 
-                      <mat-card class="example-card">
-                        <mat-card-header>
-                          <div mat-card-avatar class="example-header-image"></div>
-                          <mat-card-title>Shiba Inu</mat-card-title>
-                        </mat-card-header>
-                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                          <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                            bred for hunting.
-                          </p>
-                        </mat-card-content>
-                      </mat-card>
+          <mat-card class="example-card"> 
+            <img mat-card-image src="../../../../../assets/imagens/certificados/java8-02.jpg" alt="Foto de certificado java">
+          </mat-card>
+                
+        </div>
 
-                      <mat-card class="example-card">
-                        <mat-card-header>
-                          <div mat-card-avatar class="example-header-image"></div>
-                          <mat-card-title>Shiba Inu</mat-card-title>
-                        </mat-card-header>
-                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                          <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                            bred for hunting.
-                          </p>
-                        </mat-card-content>
-                      </mat-card>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayout.sm="column" fxLayout.xs="column">
 
-                      <mat-card class="example-card">
-                        <mat-card-header>
-                          <div mat-card-avatar class="example-header-image"></div>
-                          <mat-card-title>Shiba Inu</mat-card-title>
-                        </mat-card-header>
-                        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                          <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                            bred for hunting.
-                          </p>
-                        </mat-card-content>
-                      </mat-card>
+          <mat-card class="example-card">
+            <img mat-card-image src="../../../../../assets/imagens/certificados/java8-03.jpg" alt="Foto de certificado java">
+          </mat-card>
 
-                    </div>
+        </div>
+                
+      </mat-expansion-panel>
 
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Angular
+          </mat-panel-title>
+        </mat-expansion-panel-header>
 
-                    <div 
-                        fxLayout="row" fxLayoutAlign="center center"
-                        fxLayout.sm="column" 
-                        fxLayout.xs="column" 
-                    >
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayout.sm="column" fxLayout.xs="column">
 
-             
-                        <mat-card class="example-card">
-                            <mat-card-header>
-                              <div mat-card-avatar class="example-header-image"></div>
-                              <mat-card-title>Shiba Inu</mat-card-title>
-                            </mat-card-header>
-                            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                            <mat-card-content>
-                              <p>
-                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                                bred for hunting.
-                              </p>
-                            </mat-card-content>
-                          </mat-card>
-    
-                          <mat-card class="example-card">
-                            <mat-card-header>
-                              <div mat-card-avatar class="example-header-image"></div>
-                              <mat-card-title>Shiba Inu</mat-card-title>
-                            </mat-card-header>
-                            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                            <mat-card-content>
-                              <p>
-                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                                bred for hunting.
-                              </p>
-                            </mat-card-content>
-                          </mat-card>
-    
-                          <mat-card class="example-card">
-                            <mat-card-header>
-                              <div mat-card-avatar class="example-header-image"></div>
-                              <mat-card-title>Shiba Inu</mat-card-title>
-                            </mat-card-header>
-                            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                            <mat-card-content>
-                              <p>
-                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                                bred for hunting.
-                              </p>
-                            </mat-card-content>
-                          </mat-card>
-    
-                          <mat-card class="example-card">
-                            <mat-card-header>
-                              <div mat-card-avatar class="example-header-image"></div>
-                              <mat-card-title>Shiba Inu</mat-card-title>
-                            </mat-card-header>
-                            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                            <mat-card-content>
-                              <p>
-                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                                bred for hunting.
-                              </p>
-                            </mat-card-content>
-                          </mat-card>
-    
-                          <mat-card class="example-card">
-                            <mat-card-header>
-                              <div mat-card-avatar class="example-header-image"></div>
-                              <mat-card-title>Shiba Inu</mat-card-title>
-                            </mat-card-header>
-                            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                            <mat-card-content>
-                              <p>
-                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                                bred for hunting.
-                              </p>
-                            </mat-card-content>
-                          </mat-card>
-    
-                        </div>
-                 
-                </mat-expansion-panel>
+          <mat-card class="example-card"> 
+            <img mat-card-image src="../../../../../assets/imagens/certificados/em-breve.png" alt="Foto de certificado Angular">
+          </mat-card>
+            
+        </div>
 
+      </mat-expansion-panel>
 
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      Self aware panel
-                    </mat-panel-title>
-                    <mat-panel-description>
-                      Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <p>I'm visible because I am open</p>
-                </mat-expansion-panel>
-              </mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
 
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            ReactJS
+          </mat-panel-title>
+        </mat-expansion-panel-header>
 
-    </div>
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayout.sm="column" fxLayout.xs="column">
+          <mat-card class="example-card">
+            <img mat-card-image src="../../../../../assets/imagens/certificados/em-breve.png" alt="Foto de certificado de reactJS">
+          </mat-card>
+        </div>
 
+      </mat-expansion-panel>
 
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Banco de dados
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayout.sm="column" fxLayout.xs="column">
+          <mat-card class="example-card"> 
+            <img mat-card-image src="../../../../../assets/imagens/certificados/em-breve.png" alt="Foto de certificado banco de dados">
+          </mat-card>
+        </div>
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"(closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Diversos
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayout.sm="column" fxLayout.xs="column">
+
+          <mat-card class="example-card">
+            <img mat-card-image src="../../../../../assets/imagens/certificados/performance.JPG" alt="Foto de certificado diverso">
+          </mat-card>
+
+          <mat-card class="example-card">
+            <img mat-card-image src="../../../../../assets/imagens/certificados/vm.jpg" alt="Foto de certificado diverso">
+          </mat-card>
+
+          <mat-card class="example-card">
+            <img mat-card-image src="../../../../../assets/imagens/certificados/php.jpg" alt="Foto de certificado diverso">
+          </mat-card>
+
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
 </div>
 

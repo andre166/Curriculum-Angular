@@ -1,6 +1,5 @@
 .certificado-section{
-    /* max-width: 900px; */
-    min-height: 92vh;
+    min-height: 76vh;
 }
 
 .certificado-container{
@@ -8,13 +7,20 @@
     margin: 25px 0px;
 }
 
-/* mat-accordion{
-    width: 100%;
-} */
-
 .example-card{
-    max-width: 13.5em;
-    margin-right: 12px;
+    max-width: 27em;
+    margin-right: 18px;
     margin-top: 12px;
-    /* height: 400px !important; */
+}
+
+#title-certificado{
+    color: #a58c5e;
+    font-size: 26pt;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
 }
