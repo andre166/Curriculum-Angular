@@ -19,7 +19,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -51,7 +50,6 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatMenuModule,
     MatListModule,
     FlexLayoutModule,
-    FontAwesomeModule,
     MatGridListModule,
     MatFormFieldModule,
     MatSidenavModule,
