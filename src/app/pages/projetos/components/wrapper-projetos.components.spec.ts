@@ -1,7 +1,7 @@
-import { WrapperProjetos.Components } from './wrapper-projetos.components';
+import { WrapperProjetosComponents } from './wrapper-projetos.components';
 
 describe('WrapperProjetos.Components', () => {
   it('should create an instance', () => {
-    expect(new WrapperProjetos.Components()).toBeTruthy();
+    expect(new WrapperProjetosComponents()).toBeTruthy();
   });
 });

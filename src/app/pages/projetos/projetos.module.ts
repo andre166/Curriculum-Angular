@@ -5,6 +5,13 @@ import { ProjetosComponent, WrapperProjetosComponents } from './components';
 
 import { RouterModule } from '@angular/router';
 
+import {  MatButtonModule } from '@angular/material/button';
+import {  MatTooltipModule } from '@angular/material/tooltip';
+import {  MatIconModule } from '@angular/material/icon';
+import {  FlexLayoutModule } from '@angular/flex-layout';
+
+
+
 
 @NgModule({
   declarations: [
@@ -13,7 +20,12 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FlexLayoutModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+ 
   ]
 })
 export class ProjetosModule { }
