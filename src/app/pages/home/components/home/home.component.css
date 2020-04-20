@@ -16,7 +16,7 @@
     height: 93vh;
     background-image: url('../../../../../assets/imagens/ceramic.jpg');
     overflow: hidden;
-    background-attachment: fixed;
+    /* background-attachment: scroll; */
     background-repeat: no-repeat;
     background-size: cover; 
 }
