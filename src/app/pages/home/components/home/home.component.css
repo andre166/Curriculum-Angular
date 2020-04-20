@@ -5,7 +5,7 @@
 }
 
 #btn-descer{
-    margin-top: 9em;
+    margin-top: 12em;
     font-size: 26pt;
     color: #fff;
     border-radius: 100%;
@@ -13,10 +13,10 @@
 }
 
 .img-container{
-    height: 93vh;
+    height: 100%;
     background-image: url('../../../../../assets/imagens/ceramic.jpg');
     overflow: hidden;
-    /* background-attachment: scroll; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 
 }
