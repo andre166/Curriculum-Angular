@@ -17,6 +17,8 @@ import {  MatCardModule} from '@angular/material/card';
 import {  MatGridListModule} from '@angular/material/grid-list';
 import {  Section2Component } from './components/section2';
 import {  MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 //
@@ -30,7 +32,9 @@ import {  MatTabsModule } from '@angular/material/tabs';
   imports: [
     CommonModule,
     RouterModule,
+    MatFormFieldModule,
     MatInputModule,
+    MatDialogModule,
     MatButtonModule,
     MatListModule,
     MatTooltipModule,

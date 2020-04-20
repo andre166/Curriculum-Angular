@@ -19,14 +19,16 @@ export class AppComponent {
     this.reason = reason;
     this.sidenav.close();
   }
- 
-  
-
-  constructor(
-    private snackBar: MatSnackBar,
-  ){}
 
   CurriculumAlert(){
     this.snackBar.open("Em Breve", "",{ duration: 5000 });
   }
+
+  constructor(
+    private snackBar: MatSnackBar,
+
+  ){}
+
+
 }
+

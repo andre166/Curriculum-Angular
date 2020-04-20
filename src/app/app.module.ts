@@ -26,10 +26,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatListModule} from '@angular/material/list';
 
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header';
 import { FooterComponent } from './footer';
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatNativeDateModule} from '@angular/material/core';
 
 
 
@@ -38,9 +40,11 @@ import { FooterComponent } from './footer';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-   
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
+    MatNativeDateModule,
     MatCardModule,
     MatButtonModule,
     MatIconModule,
@@ -67,9 +71,12 @@ import { FooterComponent } from './footer';
 
 
   ],
+  entryComponents: [
+  ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AppComponent,
 
   ],
   providers: [],
