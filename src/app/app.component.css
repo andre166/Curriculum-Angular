@@ -4,8 +4,8 @@ mat-toolbar{
 }
 
 #img-bg-appComponent{
-  background-image: url('../assets/imagens/ceramic.jpg');
-  overflow: hidden;
+    background-image: url('../assets/imagens/ceramic.jpg');
+    overflow: hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 

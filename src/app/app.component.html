@@ -28,7 +28,7 @@
   
   <mat-sidenav-content>
   
-    <mat-toolbar fxHide.gt-sm="true">
+    <mat-toolbar fxHide.gt-sm="true" [ngStyle.xs]="{'height.px': 60}">
 
       <a class="logo"  routerLink="/home">Home</a>
       
@@ -42,7 +42,7 @@
   
     </mat-toolbar>
 
-    <div id="img-bg-appComponent">
+    <div id="img-bg-appComponent" [ngStyle.xs]="{'background-position-x.px': -160 }">
       <router-outlet></router-outlet>
     </div>
   
