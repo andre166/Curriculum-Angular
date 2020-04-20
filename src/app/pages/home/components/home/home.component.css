@@ -14,6 +14,11 @@
 
 .img-container{
     height: 93vh;
+    background-image: url('../../../../../assets/imagens/ceramic.jpg');
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 #txt-intro{
