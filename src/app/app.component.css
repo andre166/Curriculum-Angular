@@ -11,6 +11,10 @@ mat-toolbar{
     background-size: cover; 
 }
 
+.fixo{
+  position: fixed;
+}
+
 .logo{
   color: #a58c5e;
   text-decoration: none;

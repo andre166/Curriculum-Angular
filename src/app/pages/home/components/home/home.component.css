@@ -5,18 +5,18 @@
 }
 
 #btn-descer{
-    margin-top: 12em;
+    margin-top: 10em;
     font-size: 26pt;
-    color: #fff;
+    color: #a58c5e;
     border-radius: 100%;
     padding: 6px 12px;
 }
 
 .img-container{
-    height: 100%;
+    width: 100%;
+    height: 92vh;
     background-image: url('../../../../../assets/imagens/ceramic.jpg');
     overflow: hidden;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover; 
 }
