@@ -3,15 +3,18 @@ mat-toolbar{
   height: 90px;
 }
 
+.fixo{
+  position: fixed;
+  top: 0; 
+  z-index: 1000; 
+
+}
+
 #img-bg-appComponent{
     background-image: url('../assets/imagens/ceramic.jpg');
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover; 
-}
-
-.fixo{
-  position: fixed;
 }
 
 .logo{

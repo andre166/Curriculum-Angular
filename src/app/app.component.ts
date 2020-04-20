@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import {  MatSidenav } from '@angular/material/sidenav';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -31,4 +30,5 @@ export class AppComponent {
 
 
 }
+
 
