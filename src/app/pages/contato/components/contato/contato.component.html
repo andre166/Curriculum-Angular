@@ -26,14 +26,14 @@
         <div class="border-custom" ></div>
       </div>
 
-      <form>
+      <form [formGroup]="form">
 
         <div fxLayoutAlign="space-around start"  fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayoutAlign.xs="center center">
 
           <div>
               <mat-form-field appearance="outline">
                 <mat-label>Nome</mat-label>
-                <input type="text" matInput placeholder="Nome">
+                <input type="text" matInput formControlName="nome" placeholder="Nome">
                 
               </mat-form-field>
           </div>
@@ -41,7 +41,7 @@
           <div>
             <mat-form-field appearance="outline">
               <mat-label>Email</mat-label>
-              <input type="email" matInput placeholder="Email">
+              <input type="email" matInput formControlName="email" placeholder="Email">
               
             </mat-form-field>
           </div>
@@ -50,10 +50,10 @@
           <div>
             <mat-form-field>
               <mat-label>Assunto</mat-label>
-              <mat-select disableRipple>
-                <mat-option value="1">Duvidas</mat-option>
-                <mat-option value="2">FeddBack</mat-option>
-                <mat-option value="3">Outros</mat-option>
+              <mat-select disableRipple formControlName="assunto">
+                <mat-option value="duvidas">Duvidas</mat-option>
+                <mat-option value="feedback">FeddBack</mat-option>
+                <mat-option value="outros">Outros</mat-option>
               </mat-select>
             </mat-form-field>
           </div>
@@ -63,12 +63,12 @@
         <div fxLayoutAlign="center center">
           <mat-form-field class="w-50">
             <mat-label>Digite a menssagem</mat-label>
-            <textarea class="txtArea" matInput placeholder="Ex. Como estou me sentindo..."></textarea>
+            <textarea class="txtArea" matInput formControlName="texto" placeholder="Ex. Como estou me sentindo..."></textarea>
           </mat-form-field>
         </div>
 
         <div fxLayoutAlign="center center" >
-          <a type="button" class="btn-enviar">Enviar</a>
+          <button mat-raised-button color="primary" (click)="eviarEmail()">Enviar</button>
         </div>
     
       </form>

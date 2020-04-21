@@ -10,6 +10,11 @@
     color: #a58c5e;
     border-radius: 100%;
     padding: 6px 12px;
+    text-shadow: 
+        1px 0.5px 1px #000000,
+        1px 0.5px 4px #202020,
+        2px 2px 32px rgb(8, 8, 8),
+        2px 2px 30px rgb(8, 8, 8);
 }
 
 .img-container{

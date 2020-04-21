@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
-import { Router } from '@angular/router';
+import { ContatoService } from '../../services';
+import { Contato } from '../../models';
 
 @Component({
   selector: 'app-contato',
@@ -14,14 +14,32 @@ export class ContatoComponent implements OnInit {
   form: FormGroup;
 
   constructor(
-    
-    // private router: Router,
     private fb: FormBuilder,
     private snackBar: MatSnackBar,
-
+    private contatoService: ContatoService
   ) { }
 
   ngOnInit(): void {
+    this.criarContato();
+  }
+
+  criarContato(){
+
+    this.form = this.fb.group({
+      nome: [''],
+      email: [''],
+      assunto: [''],
+      texto: ['']
+    });
+    
+  }
+
+  eviarEmail() {
+
+    const contato: Contato = this.form.value;
+    console.log("contato", contato);
+
+    this.contatoService.logar(contato);
   }
 
 }

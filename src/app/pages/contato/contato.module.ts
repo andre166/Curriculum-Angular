@@ -24,6 +24,11 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSliderModule} from '@angular/material/slider';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { ContatoService } from './services';
+
 
 // import {MatFormFieldModule} from '@angular/material/form-field';
 // import {MatInputModule} from '@angular/material/input';
@@ -36,6 +41,8 @@ import {MatSliderModule} from '@angular/material/slider';
   imports: [
     CommonModule,
     RouterModule,
+    ReactiveFormsModule,
+    HttpClientModule,
 
     MatFormFieldModule,
     MatTabsModule,
@@ -57,6 +64,9 @@ import {MatSliderModule} from '@angular/material/slider';
     FlexLayoutModule,
     // MatFormFieldModule,
     MatCardModule
+  ],
+  providers: [
+  	ContatoService
   ]
 })
 export class ContatoModule { }
