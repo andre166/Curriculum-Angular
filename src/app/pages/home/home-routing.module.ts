@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent, WrapperhomeComponent } from './components';
+import { HomeComponent } from './components';
 
 
 export const HomeRoutes: Routes = [
     { 
         path: 'home', 
-        component: WrapperhomeComponent,
-        children: [{ path: '', component: HomeComponent }]
+        component: HomeComponent,
+        // children: [{ path: '', component: HomeComponent }]
 
     }
 ];

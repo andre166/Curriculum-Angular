@@ -6,8 +6,8 @@ import { CertificadosComponent, WrapperCertificadosComponents } from './componen
 export const CertificadosRoutes: Routes = [
     { 
         path: 'certificados', 
-        component: WrapperCertificadosComponents,
-        children: [{ path: '', component: CertificadosComponent }]
+        component: CertificadosComponent,
+        // children: [{ path: '', component: CertificadosComponent }]
 
     }
 ];

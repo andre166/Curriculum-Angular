@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProjetosComponent, WrapperProjetosComponents  } from './components';
+import { ProjetosComponent } from './components';
 
 
 export const ProjetosRoutes: Routes = [
     { 
         path: 'projetos', 
-        component: WrapperProjetosComponents,
-        children: [{ path: '', component: ProjetosComponent }]
+        component: ProjetosComponent,
+        // children: [{ path: '', component: ProjetosComponent }]
 
     }
 ];

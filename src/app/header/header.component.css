@@ -5,6 +5,15 @@
   background-color: #131419;
   height: 90px;
 }
+
+.ativo{
+  /* color: #c2c2c2 !important; */
+  background: #131419 !important;
+  box-shadow: 
+  inset -3px -3px 3px rgba(194, 193, 193, 0.164),
+  inset 4px 4px 3px rgb(0, 0, 0) !important;
+
+}
   
 .logo{
   color: #a58c5e;
@@ -51,7 +60,7 @@
 }
   
 .navbar a:hover, .logo:hover{
-  color: #c2c2c2;
+  /* color: #c2c2c2; */
   background: #131419;
   box-shadow:  
   inset -3px -3px 3px rgba(194, 193, 193, 0.164),

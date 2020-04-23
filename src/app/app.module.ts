@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+
 
 import { 
   HomeModule, HomeRoutingModule, 
@@ -42,6 +44,7 @@ import {MatNativeDateModule} from '@angular/material/core';
   ],
   imports: [
     FormsModule,
+    CommonModule,
     ReactiveFormsModule,
     MatNativeDateModule,
     MatCardModule,

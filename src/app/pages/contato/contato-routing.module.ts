@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContatoComponent, WrapperContatoComponent } from './components';
+import { ContatoComponent } from './components';
 
 
 export const ContatoRoutes: Routes = [
     { 
         path: 'contato', 
-        component: WrapperContatoComponent,
-        children: [{ path: '', component: ContatoComponent }]
+        component: ContatoComponent,
+        // children: [{ path: '', component: ContatoComponent }]
 
     }
 ];

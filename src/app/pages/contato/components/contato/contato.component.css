@@ -7,6 +7,27 @@
     border-radius:5px;
 }
 
+.msgEmail{
+    background-color: #30c530a2;
+    color: #017901;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.div-error{
+    margin-top: -32px;
+    font-size: 8pt;
+    color: red;
+}
+
+.div-error-assunto{
+    margin-top: -28px;
+    font-size: 8pt;
+    color: red;
+}
+
 #img-mapa{
     max-height: 29em;
     border-radius: 10px;

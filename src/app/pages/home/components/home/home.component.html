@@ -1,35 +1,34 @@
-<div class="img-container" [ngStyle.xs]="{'background-position-x.px': -200, 'margin-top.px': 60}">
-    <div fxLayout="row" >
-        <div fxFlexFill>
+<div fxLayout="column">
+    <div class="img-container"  [ngStyle.xs]="{'background-position-x.px': -240, 'margin-top.px': 60}">
     
-            <div id="txt-intro" style="font-style: italic" [ngStyle.xs]="{'font-size.px': 18,'margin-top.em': 6}" [ngStyle.sm]="{'font-size.px': 20}" [ngStyle.md]="{'font-size.px': 30}">
-                <h3 fxHide.xs="true" fxShow.gt-sm="true">Prazer, me chamo André Mesquita</h3>
-                <h3 fxShow.gt-xs="false">André Mesquita</h3>
-               
-                   
-                  
-            </div>
-            
-            <div id="txt-subtitulo" style="font-style: italic;" [ngStyle.xs]="{'font-size.px': 12}" [ngStyle.sm]="{'font-size.px': 15}" [ngStyle.md]="{'font-size.px': 18}">
-                <p id="subtitulo">Desenvolvedor Web Full Stack</p>
-            </div>
-            
-            <div fxLayout="row" class="btn-descer-div">
-                <a id="btn-descer">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
     
+        <div fxLayout="column" fxFlexFill>
+        
+                <div id="txt-intro" style="font-style: italic" [ngStyle.xs]="{'font-size.px': 18,'margin-top.em': 5}" [ngStyle.sm]="{'font-size.px': 20}" [ngStyle.md]="{'font-size.px': 30}">
+                    <h3 fxHide.xs="true" fxShow.gt-sm="true">Prazer, me chamo André Mesquita</h3>
+                    <h3 fxShow.gt-xs="false">André Mesquita</h3> 
+                </div>
+                
+                <div id="txt-subtitulo" style="font-style: italic;" [ngStyle.xs]="{'font-size.px': 12}" [ngStyle.sm]="{'font-size.px': 15}" [ngStyle.md]="{'font-size.px': 18}">
+                    <p id="subtitulo">Desenvolvedor Web Full Stack</p>
+                </div>
+                
+                <div fxLayout="row" class="btn-descer-div" [ngStyle.xs]="{'margin-top.px': 50}">
+                    <a id="btn-descer">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
         </div>
+        
+        
     </div>
     
     
-    
+    <app-section1></app-section1>
+    <app-section2></app-section2>
+           
+
 </div>
-        <div>
-            <app-section1></app-section1>
-            <app-section2></app-section2>
-        </div>
 
 
 

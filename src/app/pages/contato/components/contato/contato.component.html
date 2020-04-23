@@ -26,49 +26,71 @@
         <div class="border-custom" ></div>
       </div>
 
-      <form [formGroup]="form">
+      <div  *ngIf="msg" class="msgEmail" fxLayoutAlign="center center">
+        <div>Email enviado com sucesso, obrigado!</div>
+       </div>
+
+      <form [formGroup]="form" novalidate >
 
         <div fxLayoutAlign="space-around start"  fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayoutAlign.xs="center center">
 
           <div>
-              <mat-form-field appearance="outline">
+              <mat-form-field appearance="outline" >
                 <mat-label>Nome</mat-label>
-                <input type="text" matInput formControlName="nome" placeholder="Nome">
-                
+                <input type="text" matInput formControlName="nome" id="nome" placeholder="Nome" required>  
               </mat-form-field>
+
+                  <div *ngIf="nome.touched && nome.errors" class="div-error">
+                    <p *ngIf="nome.errors.required">
+                      Digite o Nome.
+                    </p>
+                  </div>
           </div>
           <!-- ==================================== -->
           <div>
             <mat-form-field appearance="outline">
               <mat-label>Email</mat-label>
-              <input type="email" matInput formControlName="email" placeholder="Email">
-              
+              <input type="email" matInput formControlName="email" placeholder="Email" required>
             </mat-form-field>
+            <div *ngIf="email.touched && email.invalid" class="div-error">
+              <p>
+                Digite o Email.
+              </p>
+            </div>
+           
+          
           </div>
 
           <!-- ==================================== -->
           <div>
             <mat-form-field>
               <mat-label>Assunto</mat-label>
-              <mat-select disableRipple formControlName="assunto">
+              <mat-select disableRipple formControlName="assunto" required>
                 <mat-option value="duvidas">Duvidas</mat-option>
                 <mat-option value="feedback">FeddBack</mat-option>
                 <mat-option value="outros">Outros</mat-option>
               </mat-select>
             </mat-form-field>
+
+            <div *ngIf="assunto.touched && assunto.errors" class="div-error-assunto">
+              <p *ngIf="assunto.errors.required">
+                Esolha o assunto
+              </p>
+            </div>
           </div>
   
         </div>
 
-        <div fxLayoutAlign="center center">
+        <div fxLayoutAlign="center center" fxLayout="column">
           <mat-form-field class="w-50">
             <mat-label>Digite a menssagem</mat-label>
-            <textarea class="txtArea" matInput formControlName="texto" placeholder="Ex. Como estou me sentindo..."></textarea>
+            <textarea class="txtArea" matInput formControlName="texto" placeholder="Ex. Como estou me sentindo..." required></textarea>
           </mat-form-field>
+
         </div>
 
         <div fxLayoutAlign="center center" >
-          <button mat-raised-button color="primary" (click)="eviarEmail()">Enviar</button>
+          <button  type="submit" mat-raised-button color="primary" (click)="eviarEmail()" [disabled]="msg">Enviar</button>
         </div>
     
       </form>

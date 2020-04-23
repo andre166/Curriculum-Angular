@@ -6,8 +6,6 @@ import { Contato } from '../';
 })
 export class ContatoService {
 
-  private readonly PATH: string = 'auth';
-
   constructor(
     private http: HttpClient
   ) { }

@@ -8,6 +8,12 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class HeaderComponent {
 
+  private showCertificado = false;
+  private showContato = false;
+  private showProjetos = false;
+  public selectedItem: string;
+
+
   constructor(
     private snackBar: MatSnackBar,
 
@@ -16,6 +22,17 @@ export class HeaderComponent {
   
   CurriculumAlert(){
     this.snackBar.open("Em Breve", "",{ duration: 5000 });
+  }
+
+  mudaCor(a){
+
+     if(a == "proj"){
+      this.showProjetos = true;
+      this.showContato = false;
+      this.showCertificado = false;
+     }
+
+
   }
 
   topFunction() {
