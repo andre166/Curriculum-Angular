@@ -37,8 +37,8 @@ mat-toolbar{
   color: rgb(194, 194, 194);
   background: #131419;
   box-shadow:  
-  inset -3px -3px 3px rgba(194, 193, 193, 0.164),
-  inset 4px 4px 3px rgb(0, 0, 0);
+  inset -3px -3px 3px #c2c1c12a,
+  inset 4px 4px 3px #000000;
 }
 
 .example-spacer {
@@ -50,9 +50,8 @@ mat-toolbar{
   border-radius: 20px;
   margin-right: 20px;
   background: #131419;
-  box-shadow:  
-    -3px -3px 3px rgba(194, 193, 193, 0.164),
-    4px 4px 3px rgb(0, 0, 0);
+  box-shadow:  -3px -3px 3px #c2c1c12a,
+                4px 4px 3px #000000;
 }
 
 mat-sidenav{
