@@ -6,13 +6,15 @@ import { Contato } from '../';
 })
 export class ContatoService {
 
+  private readonly BASE_URL = "http://localhost:3000/sendmail";
+
   constructor(
     private http: HttpClient
   ) { }
 
   logar(contato: Contato) {
     console.log("contato Service", contato);
-    return this.http.post('http://localhost:3000/sendmail', contato).subscribe(
+    return this.http.post( this.BASE_URL, contato).subscribe(
       response => {
         console.log(response);
       }

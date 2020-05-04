@@ -3,7 +3,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContatoService } from '../../services';
 import { Contato } from '../../models';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
+// import { Location } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-contato',
@@ -14,7 +16,6 @@ export class ContatoComponent implements OnInit {
 
   form: FormGroup;
   msg: boolean = false;
-  formularioValido: boolean = true;
 
   constructor(
     private router: Router,
@@ -23,29 +24,17 @@ export class ContatoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.criarContato();
     this.gerarForm();
   }
 
   gerarForm() {
+
     this.form = this.fb.group({
       nome: ['', [Validators.required]],
       assunto: ['', [Validators.required]],
       texto: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
     });
-  }
-
-  criarContato(){
-
-    this.form = this.fb.group({
-      nome: [' '],
-      email: [''],
-      assunto: [''],
-      texto: ['']
-    });
-
-    
   }
 
   msgEmailSuccess(){
@@ -60,7 +49,6 @@ export class ContatoComponent implements OnInit {
     if (this.form.invalid) {
       return;
     }
-
     const contato: Contato = this.form.value;
     console.log("contato", contato);
     this.contatoService.logar(contato);
@@ -83,5 +71,6 @@ export class ContatoComponent implements OnInit {
   get texto() {
     return this.form.get('texto');
   }
+
 
 }

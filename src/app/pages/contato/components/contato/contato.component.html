@@ -27,11 +27,11 @@
       </div>
 
       <div  *ngIf="msg" class="msgEmail" fxLayoutAlign="center center">
-        <div>Email enviado com sucesso, obrigado!</div>
+        <div [ngStyle.xs]="{'font-size.pt': 10}">Email enviado com sucesso, obrigado!</div>
        </div>
 
-      <form [formGroup]="form" novalidate >
-
+      <form [formGroup]="form" novalidate *ngIf="!msg" >
+       
         <div fxLayoutAlign="space-around start"  fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayoutAlign.xs="center center">
 
           <div>
@@ -84,13 +84,13 @@
         <div fxLayoutAlign="center center" fxLayout="column">
           <mat-form-field class="w-50">
             <mat-label>Digite a menssagem</mat-label>
-            <textarea class="txtArea" matInput formControlName="texto" placeholder="Ex. Como estou me sentindo..." required></textarea>
+            <textarea class="txtArea" id="texto"  matInput formControlName="texto" placeholder="Ex. Como estou me sentindo..." required ></textarea>
           </mat-form-field>
 
         </div>
 
         <div fxLayoutAlign="center center" >
-          <button  type="submit" mat-raised-button color="primary" (click)="eviarEmail()" [disabled]="msg">Enviar</button>
+          <button  type="submit" mat-raised-button color="primary" (click)="eviarEmail()" >Enviar</button>
         </div>
     
       </form>

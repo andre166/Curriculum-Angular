@@ -33,6 +33,7 @@ import { FooterComponent } from './footer';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
+import { ForbiddenValidatorDirective } from './shared';
 
 
 
@@ -41,6 +42,7 @@ import {MatNativeDateModule} from '@angular/material/core';
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    ForbiddenValidatorDirective,
   ],
   imports: [
     FormsModule,

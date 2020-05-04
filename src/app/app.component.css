@@ -11,7 +11,7 @@ mat-toolbar{
 }
 
 #img-bg-appComponent{
-    background-image: url('../assets/imagens/book2.jpg');
+    background-image: url('../assets/imagens/ceramic.jpg');
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover; 
