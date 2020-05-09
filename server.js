@@ -9,10 +9,12 @@
 // });
  
 // app.listen(process.env.PORT || 8080);
-
+var cors = require('cors');
+const bodyParser = require("body-parser");
 const express = require('express');
 const path = require('path');
 const app = express();
+app.use(cors());
  
 app.use(express.static(`${__dirname}/dist/curriculum`));
  
@@ -36,21 +38,20 @@ const nodemailer = require("nodemailer");
 async function main(contato) {
 
     console.log("contato no sendMail ====> ", contato)
-  
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
       host: "smtp.mail.yahoo.com",
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
-        user: "andre_portfolio76@yahoo.com", // generated ethereal user
-        pass: "lgxlhlgiekscluds" // generated ethereal password
+        user: "andre_portfolio80@yahoo.com", // generated ethereal user
+        pass: "8jwpuijpqqrdpagpz" // generated ethereal password
       }
     });
   
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: "andre_portfolio76@yahoo.com", // sender address
+      from: "andre_portfolio80@yahoo.com", // sender address
       to: 'andremp1927@hotmail.com', // list of receivers
       subject: `${contato.assunto}`,
       html: `<p>Nome: ${contato.nome} </p> <p>Assunto: ${contato.assunto} </p> <p>Email: ${contato.email} </p> <p>Texto: ${contato.texto}</p>`   ,
