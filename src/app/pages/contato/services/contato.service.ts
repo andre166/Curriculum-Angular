@@ -7,7 +7,7 @@ import { Contato } from '../';
 })
 export class ContatoService {
 
-  private readonly BASE_URL = "http://localhost:3000/sendmail";
+  private readonly BASE_URL = "http://localhost:8080/sendmail";
 
   constructor(
     private http: HttpClient
