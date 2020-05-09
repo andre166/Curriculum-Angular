@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CertificadosComponent, WrapperCertificadosComponents } from './components';
+import { CertificadosComponent } from './components';
 
 
 export const CertificadosRoutes: Routes = [
     { 
         path: 'certificados', 
         component: CertificadosComponent,
-        // children: [{ path: '', component: CertificadosComponent }]
 
     }
 ];

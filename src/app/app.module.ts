@@ -9,7 +9,7 @@ import {
   ContatoModule, ContatoRoutingModule,
   CertificadosModule, CertificadosRoutingModule,
   ProjetosModule, ProjetosRoutingModule
-  
+
 } from './pages';
 
 
@@ -33,7 +33,6 @@ import { FooterComponent } from './footer';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
-import { ForbiddenValidatorDirective } from './shared';
 
 
 
@@ -42,7 +41,6 @@ import { ForbiddenValidatorDirective } from './shared';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ForbiddenValidatorDirective,
   ],
   imports: [
     FormsModule,
