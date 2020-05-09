@@ -5,6 +5,7 @@
 
 .mapa-container{
     border-radius:5px;
+    width: 100%;
 }
 
 .msgEmail{
@@ -32,7 +33,7 @@
 #img-mapa{
     max-height: 29em;
     border-radius: 10px;
-    width: 97%;
+    width: 100%;
 }
 
 #img-mapa:hover{
@@ -59,7 +60,7 @@
 .formulario-container{
     padding: 20px 20px;
     margin: 15px 20px;
-    width: 75%;
+    width: 100%;
     border-radius: 5px;
      background-color: #fff;
 }
