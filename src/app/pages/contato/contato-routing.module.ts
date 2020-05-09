@@ -7,8 +7,6 @@ export const ContatoRoutes: Routes = [
     { 
         path: 'contato', 
         component: ContatoComponent,
-        // children: [{ path: '', component: ContatoComponent }]
-
     }
 ];
 

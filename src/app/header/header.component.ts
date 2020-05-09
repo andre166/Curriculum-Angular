@@ -10,8 +10,6 @@ export class HeaderComponent {
   public selectedItem: string;
 
 
-  constructor(
-
-  ){}
+  constructor(){}
 
 }

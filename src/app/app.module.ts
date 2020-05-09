@@ -18,22 +18,15 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
-import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatListModule} from '@angular/material/list';
 
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header';
 import { FooterComponent } from './footer';
-
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatNativeDateModule} from '@angular/material/core';
-
 
 
 @NgModule({
@@ -43,18 +36,12 @@ import {MatNativeDateModule} from '@angular/material/core';
     FooterComponent,
   ],
   imports: [
-    FormsModule,
     CommonModule,
-    ReactiveFormsModule,
-    MatNativeDateModule,
     MatCardModule,
-    MatButtonModule,
     MatIconModule,
     MatMenuModule,
     MatListModule,
     FlexLayoutModule,
-    MatGridListModule,
-    MatFormFieldModule,
     MatSidenavModule,
     MatToolbarModule,
     BrowserModule,

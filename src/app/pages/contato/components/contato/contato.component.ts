@@ -3,9 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContatoService } from '../../services';
 import { Contato } from '../../models';
 import { Router } from '@angular/router';
-// import { Location } from '@angular/common';
-
-
 
 @Component({
   selector: 'app-contato',
@@ -40,7 +37,6 @@ export class ContatoComponent implements OnInit {
   msgEmailSuccess(){
 
     this.msg = true;  
-    // setTimeout(() => this.msg = false, 5000);
 
   }
 

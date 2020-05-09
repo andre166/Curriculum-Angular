@@ -21,13 +21,13 @@
 .div-error{
     margin-top: -32px;
     font-size: 8pt;
-    color: red;
+    color: #ff0000;
 }
 
 .div-error-assunto{
     margin-top: -28px;
     font-size: 8pt;
-    color: red;
+    color: #ff0000;
 }
 
 #img-mapa{

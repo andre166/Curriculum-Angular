@@ -22,7 +22,6 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
-    "angular-hammer": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodemailer": "^6.4.6",

@@ -1,5 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import {  MatSidenav } from '@angular/material/sidenav';
 
 @Component({
@@ -19,14 +18,7 @@ export class AppComponent {
     this.sidenav.close();
   }
 
-  CurriculumAlert(){
-    this.snackBar.open("Em Breve", "",{ duration: 5000 });
-  }
-
-  constructor(
-    private snackBar: MatSnackBar,
-
-  ){}
+  constructor(){}
 
 
 }
