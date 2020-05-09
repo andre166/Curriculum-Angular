@@ -19,12 +19,9 @@
 }
 
 .img-container{
-    /* width: 100vh; */
-    height: 92vh !important;
-    background-image:url('../../../../../assets/imagens/ceramic.jpg');
+    height: 91vh !important;
     overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover ; 
+
 }
 
 #txt-intro{
@@ -39,12 +36,6 @@
     text-align: center;
     margin-top: 7em;
     color: #a58c5e;
-    text-shadow: 
-        1px 0.5px 1px #000000,
-        1px 0.5px 4px #202020,
-        1px 1px 2px #000000,
-        2px 2px 32px rgb(8, 8, 8),
-        2px 2px 30px rgb(8, 8, 8);
 
 }
 
@@ -55,11 +46,6 @@
     justify-content: center;
     text-align: center;
     color: #cacaca;
-    text-shadow:    0.4px 0.5px 1px #000000,
-                    1px 0.5px 4px #202020,
-                    1px 0.5px 2px #0a0a0a,
-                    2px 2px 12px rgb(0, 0, 0),
-                    2px 2px 8px rgb(0, 0, 0);
 }
 
   @media screen and (max-width:960px) {

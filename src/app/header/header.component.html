@@ -1,20 +1,20 @@
 
 <mat-toolbar class="bb" fxHide.lt-md="true">
   
-  <a class="logo"  routerLink="/home" (click)="selectedItem = 'item0'; topFunction()"> Home</a>
+  <a class="logo"  routerLink="/home" (click)="selectedItem = 'item0'"> Home</a>
     
     <span class="example-spacer"></span>
 
     <div class="navbar" fxShow="true" fxHide.lt-md="true">
       <div class="example-button-row">
 
-        <a class="morph-menu-btn" (click)="CurriculumAlert(); topFunction()"><i class="fas fa-file-download"></i> CV</a>
+        <a class="morph-menu-btn" href="../../assets/CV.pdf" target="blank"><i class="fas fa-file-download"></i> CV</a>
 
-        <a class="morph-menu-btn"  routerLink="/certificados" (click)="selectedItem = 'item3'; topFunction()" [ngClass]="{'ativo': selectedItem === 'item3'}">Certificados</a>
+        <a class="morph-menu-btn"  routerLink="/certificados" (click)="selectedItem = 'item3'" [ngClass]="{'ativo': selectedItem === 'item3'}">Certificados</a>
 
-        <a class="morph-menu-btn"   routerLink="/contato" (click)="selectedItem = 'item2'; topFunction()" [ngClass]="{'ativo': selectedItem === 'item2'}"> Contato</a>
+        <a class="morph-menu-btn"   routerLink="/contato" (click)="selectedItem = 'item2'" [ngClass]="{'ativo': selectedItem === 'item2'}"> Contato</a>
 
-        <a class="morph-menu-btn"  routerLink="/projetos" (click)="selectedItem = 'item1'; topFunction()" [ngClass]="{'ativo': selectedItem === 'item1'}">Projetos </a>
+        <a class="morph-menu-btn"  routerLink="/projetos" (click)="selectedItem = 'item1'" [ngClass]="{'ativo': selectedItem === 'item1'}">Projetos </a>
 
       </div>
     </div>
