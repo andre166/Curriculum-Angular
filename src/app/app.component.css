@@ -16,41 +16,75 @@ mat-toolbar{
     background-image: repeating-linear-gradient(135deg, rgba(145, 145, 145, 0.02) 0px, rgba(145, 145, 145, 0.02) 39px,rgba(140, 140, 140, 0.02) 39px, rgba(140, 140, 140, 0.02) 57px,rgba(9, 9, 9, 0.02) 57px, rgba(9, 9, 9, 0.02) 91px,rgba(217, 217, 217, 0.02) 91px, rgba(217, 217, 217, 0.02) 119px,rgba(45, 45, 45, 0.02) 119px, rgba(45, 45, 45, 0.02) 141px,rgba(227, 227, 227, 0.02) 141px, rgba(227, 227, 227, 0.02) 184px,rgba(236, 236, 236, 0.02) 184px, rgba(236, 236, 236, 0.02) 227px,rgba(124, 124, 124, 0.02) 227px, rgba(124, 124, 124, 0.02) 244px),repeating-linear-gradient(135deg, rgba(39, 39, 39, 0.02) 0px, rgba(39, 39, 39, 0.02) 23px,rgba(2, 2, 2, 0.02) 23px, rgba(2, 2, 2, 0.02) 55px,rgba(13, 13, 13, 0.02) 55px, rgba(13, 13, 13, 0.02) 71px,rgba(44, 44, 44, 0.02) 71px, rgba(44, 44, 44, 0.02) 98px,rgba(240, 240, 240, 0.02) 98px, rgba(240, 240, 240, 0.02) 134px,rgba(182, 182, 182, 0.02) 134px, rgba(182, 182, 182, 0.02) 159px,rgba(246, 246, 246, 0.02) 159px, rgba(246, 246, 246, 0.02) 174px,rgba(157, 157, 157, 0.02) 174px, rgba(157, 157, 157, 0.02) 190px),repeating-linear-gradient(135deg, rgba(145, 145, 145, 0.02) 0px, rgba(145, 145, 145, 0.02) 35px,rgba(217, 217, 217, 0.02) 35px, rgba(217, 217, 217, 0.02) 53px,rgba(199, 199, 199, 0.02) 53px, rgba(199, 199, 199, 0.02) 70px,rgba(196, 196, 196, 0.02) 70px, rgba(196, 196, 196, 0.02) 114px,rgba(137, 137, 137, 0.02) 114px, rgba(137, 137, 137, 0.02) 143px,rgba(249, 249, 249, 0.02) 143px, rgba(249, 249, 249, 0.02) 191px,rgba(247, 247, 247, 0.02) 191px, rgba(247, 247, 247, 0.02) 239px,rgba(38, 38, 38, 0.02) 239px, rgba(38, 38, 38, 0.02) 273px),linear-gradient(90deg, rgb(69, 69, 69),rgb(3, 3, 3));
 }
 
-.logo{
-  color: #a58c5e;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 3px 15px;
-  border-radius: 5px;
-  font-size: 11pt;
-  font-weight: 600;
-  background: #131419;
-  box-shadow:  
-  -3px -3px 3px rgba(194, 193, 193, 0.164),
-  4px 4px 3px rgb(0, 0, 0);
-  text-align: center;
-  display: inline-block;
-}
-
-.logo:hover{
-  color: rgb(194, 194, 194);
-  background: #131419;
-  box-shadow:  
-  inset -3px -3px 3px #c2c1c12a,
-  inset 4px 4px 3px #000000;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
-}
-
 .btn-hamburguer-morph{
+  cursor: pointer;
+  display: flex;
   color: #a58c5e;
-  border-radius: 20px;
+  padding: 10px;
+  border-radius: 50%;
   margin-right: 20px;
   background: #131419;
   box-shadow:  -3px -3px 3px #c2c1c12a,
                 4px 4px 3px #000000;
+} 
+
+.bb{
+  position: sticky;
+  top: 0; 
+  z-index: 1000; 
+  background-color: #131419;
+  height: 90px;
+}
+
+.ativo{
+  background: #131419 !important;
+  box-shadow: 
+  inset -3px -3px 3px rgba(194, 193, 193, 0.164),
+  inset 4px 4px 3px rgb(0, 0, 0) !important;
+
+}
+  
+.navbar a, .logo{
+  margin-right: 20px;
+  color: #a58c5e;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 25px 15px 25px;
+  border-radius: 5px;
+  background: #131419;
+  box-shadow:  
+    -3px -3px 3px rgba(194, 193, 193, 0.164),
+    4px 4px 3px rgb(0, 0, 0);  
+  padding: 15px 25px 15px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12pt;
+  font-weight: 600;
+}
+  
+.navbar a:first-child{
+  background: #131419;
+  box-shadow:  
+  -3px -3px 2.5px rgba(194, 193, 193, 0.164),
+  4px 4px 3px rgb(0, 0, 0);
+  margin-right: 20px;
+  padding: 20px 17px;
+  border-radius: 50px;
+}
+  
+.navbar a:hover, .logo:hover, .btn-hamburguer-morph:hover{
+  background: #131419;
+  box-shadow:  
+  inset -3px -3px 3px rgba(194, 193, 193, 0.164),
+  inset 4px 4px 3px rgb(0, 0, 0);
+}
+  
+.navbar{
+  margin-right: 100px;
+}
+  
+.example-spacer {
+  flex: 1 1 auto;
 }
 
 mat-sidenav{
@@ -64,4 +98,11 @@ mat-list mat-list-item a{
   border-radius: 20px;
   margin-right: 20px;
 
+}
+
+@media screen and (max-width:600px){
+  .logo{
+  padding: 4px 15px;
+
+  }
 }

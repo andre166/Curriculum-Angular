@@ -1,12 +1,11 @@
 
 .right-col{
     text-align: center;
-    color: #5e6879f1;
+    /* color: #5e6879f1; */
   }
   .right-col h4{
     color: #c9cccf;
   }
-  
   footer{
     background: #131419;
     padding-top: 30px;
@@ -14,7 +13,6 @@
   }
   
   footer a{
-  
     color: #a58c5e;
     text-decoration: none;
     cursor: pointer;
@@ -29,17 +27,16 @@
     font-weight: 600;
   
   }
+
+  footer a:hover{
+    box-shadow:
+    inset -3px -3px 8px rgba(194, 193, 194, 0.157),
+    inset 4px 4px 8px rgb(0, 0, 0);
+  }
   
   footer a:first-child{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-  }
-
-  footer a:first-child:hover{
-    background: #131419;
-    box-shadow:
-    inset -3px -3px 8px rgba(194, 193, 194, 0.157),
-    inset 4px 4px 8px rgb(0, 0, 0);        
   }
 
   footer a:last-child{
@@ -49,16 +46,10 @@
 
   footer a:last-child:hover{
     background: #131419;
-    box-shadow:
-    inset -3px -3px 8px rgba(194, 193, 194, 0.157),
-    inset 4px 4px 8px rgb(0, 0, 0);
-}
+  }
   
   footer a:hover{
     background: #131419;
-    box-shadow:
-    inset -3px -3px 8px rgba(194, 193, 194, 0.157),
-    inset 4px 4px 8px rgb(0, 0, 0);
   }
   
   .footer-container{
@@ -94,13 +85,10 @@
   @media screen and (max-width:960px) {
     mat-toolbar{
       height: 60px;
-     
     }
   
     footer a{
-  
       padding: 12px 20px;
-      
       font-size: 18pt;
       font-weight: 600;
       margin-bottom: 30px;
@@ -110,7 +98,6 @@
       padding-top: 5px;
       padding-bottom: 5px;
     }
-  
   
     .footer-container{
       max-width: 600px;

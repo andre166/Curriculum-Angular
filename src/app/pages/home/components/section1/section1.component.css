@@ -26,7 +26,6 @@
 .h1-sobre-mim{
     margin-top: 20px;
     letter-spacing: 3px;
-    font-family: 'Special Elite', cursive;
     background-color: #f1f1f1;
     text-align: center;
     color: #a58c5e;
@@ -38,12 +37,9 @@
     font-weight: 600;
 }
 
-.w-100{
-    width: 100% !important;
-}
+
 .h2-sobre-mim{
     letter-spacing: 1.5px;
-    font-family: 'Special Elite', cursive;
     background-color: #f1f1f1;
     color: #a58c5e;
     text-decoration: none;
@@ -62,7 +58,6 @@
 .btn-morph-container{
     margin-top: 50px;
 }
-
 
 .txt-sobremim{
     border-bottom-right-radius: 10px;

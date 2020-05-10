@@ -1,4 +1,3 @@
-
 <mat-toolbar class="bb" fxHide.lt-md="true">
   
   <a class="logo"  routerLink="/home" (click)="selectedItem = 'item0'"> Home</a>
@@ -17,12 +16,6 @@
         <a class="morph-menu-btn"  routerLink="/projetos" (click)="selectedItem = 'item1'" [ngClass]="{'ativo': selectedItem === 'item1'}">Projetos </a>
 
       </div>
-    </div>
-  
-    <div fxShow="true" fxHide.gt-sm="true">
-      <button mat-button  class="btn-hamburguer-morph">
-        <span class="material-icons">menu</span>
-      </button>
     </div>
     
   </mat-toolbar>

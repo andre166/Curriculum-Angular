@@ -1,6 +1,7 @@
 .contato-container{
     max-width: 1000px;
     padding: 0px 10px;
+    min-height: 90vh;
 }
 
 .mapa-container{
